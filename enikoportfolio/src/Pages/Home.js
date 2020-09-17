@@ -39,13 +39,11 @@ const OverlayText = styled.div`
     padding-right: 50px;
   }
   @media ${device.desktop} {
-    font-size: 3em;
+    font-size: 3.5em;
     text-align: right;
     padding-right: 50px;
   }
 `;
-
-  
 
 class Home extends React.Component {
   render() {
@@ -56,18 +54,32 @@ class Home extends React.Component {
           <MainImage src="https://ucarecdn.com/6b826330-9ead-430b-86a7-9b14bfcb9b85/-/preview/-/format/webp/"></MainImage>
           <OverlayText>
             <Typewriter
+              options={{
+                autoStart: true,
+                loop: false,
+                deleteSpeed: 21,
+                delay: 80,
+              }}
               onInit={(typewriter) => {
                 typewriter
-                  .typeString(
-                    "Hello, I'm Enikő! <br /> I'm a freelance photographer <br /> & web-developer"
-                  )
-                  .pauseFor(200)
-                  .deleteChars(106)
-                  .pauseFor(2500)
-                  .typeString(
-                   "I create beautiful websites."
-                  )
-                  .start();
+                .typeString()
+                .pauseFor(1000)
+                .typeString('Hello! I\'m Enikő. <br /> I\'m  a photographer  <br /> & web-developer.')
+                .pauseFor(2000)
+                .deleteChars(38)
+                .typeString('I create websites that are <br /> <strong>beautiful</strong>')
+                .pauseFor(500)
+                .deleteChars(9)
+                .typeString('<strong>fast</strong>')
+                .pauseFor(500)
+                .deleteChars(4)
+                .pauseFor(500)
+                .typeString('<strong>responsive</strong>')
+                .pauseFor(500)
+                .deleteChars(11)
+                .typeString('<strong>easy to use.</strong>')
+                .start();
+                  
               }}
             />
           </OverlayText>
