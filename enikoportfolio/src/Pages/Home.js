@@ -5,6 +5,7 @@ import Typewriter from "typewriter-effect";
 import GlobalStyle from "../globalStyles";
 import Progress from "../Progress";
 
+
 const MainImage = styled.img`
   width: 100%;
   height: 100%;
