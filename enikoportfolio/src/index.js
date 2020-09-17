@@ -6,6 +6,7 @@ import Contact from "./Pages/Contact";
 import Portfolio from "./Pages/Portfolio";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
+
 ReactDOM.render(
   <div>
     <BrowserRouter>
