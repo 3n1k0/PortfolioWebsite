@@ -34,55 +34,38 @@ const Navbar = styled.nav`
   }
 `;
 
+const Navitem = ({href, navitemname})=>{
+  return(
+<li>
+            <a
+              smooth={true}
+              spy={true}
+              hashSpy={true}
+              offset={50}
+              duration={500}
+              delay={1000}
+              isDynamic={true}
+              ignoreCancelEvents={false}
+              href = {href}
+            >
+              {navitemname}
+            </a>
+          </li>
+  )
+} 
+
+
 class Navigation extends React.Component {
   render() {
     return (
       <Navbar>
         <ul>
-          <li>
-            <a
-              smooth={true}
-              spy={true}
-              hashSpy={true}
-              offset={50}
-              duration={500}
-              delay={1000}
-              isDynamic={true}
-              onSetActive={this.handleSetActive}
-              onSetInactive={this.handleSetInactive}
-              ignoreCancelEvents={false}
-              href="#home"
-            >
-              Home
-            </a>
-          </li>
-          <li>
-            <a
-              smooth={true}
-              spy={true}
-              hashSpy={true}
-              offset={50}
-              duration={500}
-              delay={1000}
-              isDynamic={true}
-              onSetActive={this.handleSetActive}
-              onSetInactive={this.handleSetInactive}
-              ignoreCancelEvents={false}
-              href="#about"
-            >
-              About
-            </a>
-          </li>
-          <li>
-            <a smooth={true} href="#portfolio">
-              Portfolio
-            </a>
-          </li>
-          <li>
-            <a smooth={true} href="#contact">
-              Contact
-            </a>
-          </li>
+          <Navitem href="#home" navitemname="Home"/>
+          <Navitem href="#about" navitemname="About"/>
+          <Navitem href="#portfolio" navitemname="Portfolio"/>
+          <Navitem href="#contact" navitemname="Contact"/>
+
+        
         </ul>
       </Navbar>
     );

@@ -10,6 +10,7 @@ import {
 import UploadcareImage from "../UploadcareImage";
 import React from "react";
 import Container from "../SectionContainer";
+import Progress from "../Progress";
 
 class About extends React.Component {
   render() {
@@ -17,6 +18,7 @@ class About extends React.Component {
       <div className="About">
         <Container color="#246a73">
         <a name="about"></a>
+
           <h2>hey there!</h2>
           <ImageContainer style={{ paddingBottom: "40px", marginTop: "40px" }}>
             <UploadcareImage

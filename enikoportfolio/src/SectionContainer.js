@@ -1,16 +1,16 @@
 import React, { lazy } from "react";
 import styled from "styled-components/macro";
 
- const Element = styled.div`
+ const SectionContainer = styled.div`
   margin: 0 auto;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   padding-bottom: 50px;
   background: ${({color}) => color};
-  scroll-snap-align: center;
+  scroll-snap-align: start;
 
   h2 {
     font-size: 60px;
@@ -33,4 +33,4 @@ import styled from "styled-components/macro";
   }
 `;
 
-export default Element;
+export default SectionContainer;
