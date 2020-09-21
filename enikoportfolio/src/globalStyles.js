@@ -5,6 +5,10 @@ const GlobalStyle = createGlobalStyle`
     margin: 0;
     padding: 0;
     font-family: 'Lucitana', 'Raleway' sans-serif;
+    height: 100vh;
+    background: black;
+    color: papayawhip;
+
 
   }
 `;

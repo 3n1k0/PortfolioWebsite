@@ -4,7 +4,21 @@ import styled from "styled-components/macro";
 import Typewriter from "typewriter-effect";
 import GlobalStyle from "../globalStyles";
 import Progress from "../Progress";
+import Navigation from "./Navigation";
+import About from "./Aboutme";
+import Portfolio from "./Portfolio";
+import Contact from "./Contact";
+import Element from "../SectionContainer";
 
+const MainContainer = styled.div`
+  width: 100%;
+  height: 100%;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+
+
+`;
 
 const MainImage = styled.img`
   width: 100%;
@@ -46,18 +60,27 @@ const OverlayText = styled.div`
   }
 `;
 
-class Home extends React.Component {
+const Section = styled.div`
+  width: 100%;
+  height: 100vh;
+`;
 
+class Home extends React.Component {
   render() {
     return (
-      <div className="Home">
-        <GlobalStyle />
-        <Progress scroll="25%" />
+      <MainContainer>
+        <Section>
+ 
+          <a name="home"></a>
 
-        <MainImageContainer>
-          <MainImage src="https://ucarecdn.com/6b826330-9ead-430b-86a7-9b14bfcb9b85/-/preview/-/format/webp/"></MainImage>
-          <OverlayText>
-            <Typewriter
+            <GlobalStyle />
+            <Navigation />
+            {/* <Progress scroll="25%" /> */}
+
+            <MainImageContainer>
+              {/* <MainImage src="https://ucarecdn.com/6b826330-9ead-430b-86a7-9b14bfcb9b85/-/preview/-/format/webp/"></MainImage> */}
+              <OverlayText>
+                {/* <Typewriter
               options={{
                 autoStart: true,
                 loop: false,
@@ -82,10 +105,22 @@ class Home extends React.Component {
                   .pauseFor(500)
                   .start();
               }}
-            />
-          </OverlayText>
-        </MainImageContainer>
-      </div>
+            /> */}
+              </OverlayText>
+            </MainImageContainer>
+
+        </Section>
+
+        <Section>
+          <Portfolio />
+        </Section>
+        <Section>
+          <About />
+        </Section>
+        <Section>
+          <Contact />
+        </Section>
+      </MainContainer>
     );
   }
 }
