@@ -5,8 +5,8 @@ import styled from "styled-components/macro";
 const PortfolioContainer = styled.div`
   width: 100%;
   height: 100%;
-  display: flex;
-  justify-content: flex-start;
+  display: grid;
+
 
   h2 {
     text-align: center;
@@ -15,22 +15,24 @@ const PortfolioContainer = styled.div`
 `;
 
 const ProjectContainer = styled.div`
-  display: flex;
+  width: 100%;
+  height: 100%;
+ 
 `;
 
 const ProjectImage = styled.img`
-    width: 500px;
-    height: 400px;
+  width: 600px;
+  height: 350px;
 
-    &:hover {
-      filter: brightness(70%);
-    }
+  &:hover {
+    filter: brightness(70%);
+  }
 `;
 
 const ProjectDescription = styled.div`
-  background-color: #f9d56e;
-  width: 500px;
-  max-height: 400px;
+  background-color: #f3ecc2;
+  width: 600px;
+  height: 350px;
   border: 2px solid black;
 `;
 
