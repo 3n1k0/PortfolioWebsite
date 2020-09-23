@@ -59,7 +59,7 @@ const Hello = styled.div`
 
   i {
     fill: papayawhip;
-    font-size: 40px;
+    font-size: 38px;
     -moz-animation: bounce 1s infinite linear;
     -o-animation: bounce 1s infinite linear;
     -webkit-animation: bounce 1s infinite linear;

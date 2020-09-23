@@ -6,7 +6,7 @@ class Contact extends React.Component {
     return (
       <SectionContainer color="#14b1ab">
           <a name="contact"></a>
-        <h1>contact</h1>
+       
       </SectionContainer>
     );
   }

@@ -2,21 +2,21 @@ import { Image, ImageContainer} from './Ui'
 import React from 'react'; 
 
 const UploadcareImage = ({uuid, alt}) => {
-    return (<ImageContainer>
+    return (
       <picture>
         <source
           srcset={`https://ucarecdn.com/${uuid}/-/preview/-/format/webp/`}
           type="image/webp"
           loading="lazy"
         />
-        <Image
+        <img
           alt={alt}
           src={`https://ucarecdn.com/${uuid}/-/preview/-/format/auto/`}
           loading="lazy"
-        ></Image>
+        ></img>
       </picture>
-    </ImageContainer>)
 
-}
+
+    )}
 
 export default UploadcareImage
