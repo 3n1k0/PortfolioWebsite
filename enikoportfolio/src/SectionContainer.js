@@ -1,16 +1,13 @@
-import React, { lazy } from "react";
 import styled from "styled-components/macro";
 
  const SectionContainer = styled.div`
   margin: 0 auto;
   width: 100%;
   height: 100vh;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  padding-bottom: 50px;
   background: ${({color}) => color};
-  scroll-snap-align: start;
+  //scroll-snap-align: start;
+  position: relative;
+
 
   h2 {
     font-size: 60px;

@@ -1,14 +1,12 @@
 import React from "react";
-import Progress from "../Progress";
 import SectionContainer from "../SectionContainer";
 
 class Portfolio extends React.Component {
   render() {
     return (
-      <SectionContainer color="pink">
+      <SectionContainer color="#f9d56e">
         <a name="portfolio"></a>
         <h1>portfolio</h1>
-        <Progress scroll="75%" />
       </SectionContainer>
     );
   }

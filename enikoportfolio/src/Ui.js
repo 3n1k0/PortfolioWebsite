@@ -82,13 +82,10 @@ export const Szepalcim = styled.div`
 
 export const ImageContainer = styled.div`
   width: 100%;
-  margin: 0 auto;
-
-  @media ${device.desktop} {
-    width: 60%;
-    padding: 20px 0px;
-  }
-`;
+  height: 100%;
+  position: relative;
+  top: 50px;
+`
 
 export const Image = styled.img`
   max-width: 100%;
