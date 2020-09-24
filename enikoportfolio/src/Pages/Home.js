@@ -55,7 +55,6 @@ const Hello = styled.div`
   h2 {
     text-align: center;
     text-shadow: 1px 1px;
-
   }
 
   i {
@@ -154,18 +153,21 @@ const Home = () => {
         <Progress progress={scrollPercentage + "%"} />
         <HomeContainer>
           <Hello>
-            <h2>Hello! My name is Eniko and I create shitty websites.<br/></h2>
+            <h2>
+              Hello! My name is Eniko and I create shitty websites.
+              <br />
+            </h2>
             {/* <i class="fas fa-angle-double-down"></i> */}
           </Hello>
         </HomeContainer>
       </SectionContainer>
 
       <SectionContainer>
-        <Portfolio />
-      </SectionContainer>
-
-      <SectionContainer>
         <About />
+      </SectionContainer>
+      
+      <SectionContainer>
+        <Portfolio />
       </SectionContainer>
 
       <SectionContainer>

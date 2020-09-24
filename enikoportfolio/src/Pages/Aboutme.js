@@ -18,11 +18,10 @@ const AboutContainer = styled.div`
   background: url("https://images.unsplash.com/photo-1558346648-9757f2fa4474?ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80");
   display: flex;
   justify-content: center;
-  padding-top: 60px;
 
   h2 {
     color: black;
-    margin: 0;
+
 
   }
 
@@ -111,6 +110,9 @@ class About extends React.Component {
             }
             loading="lazy"
           ></img> */}
+
+
+
         </AboutContainer>
       </SectionContainer>
     );

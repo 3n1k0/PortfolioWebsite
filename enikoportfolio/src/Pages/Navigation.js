@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "styled-components/macro";
-import { Link } from "react-scroll";
 
 const Navbar = styled.nav`
   width: 100%;
@@ -30,16 +29,15 @@ const Navbar = styled.nav`
       text-decoration: none;
       text-transform: uppercase;
       color: white;
-      font-family: 'Raleway';
+      font-family: "Raleway";
       font-size: 1em;
       letter-spacing: 2px;
       font-weight: 400;
 
       &:hover {
-      text-shadow: 1px 1px;
+        text-shadow: 1px 1px;
       }
     }
-
   }
 `;
 
@@ -69,9 +67,8 @@ class Navigation extends React.Component {
       <Navbar>
         <ul>
           <Navitem href="#home" navitemname="Home" />
-          <Navitem href="#portfolio" navitemname="Portfolio" />
           <Navitem href="#about" navitemname="About" />
-
+          <Navitem href="#portfolio" navitemname="Portfolio" />
           <Navitem href="#contact" navitemname="Contact" />
         </ul>
       </Navbar>
