@@ -22,6 +22,8 @@ const AboutContainer = styled.div`
 
   h2 {
     color: black;
+    margin: 0;
+
   }
 
   /* img {
@@ -37,20 +39,22 @@ const AboutContainer = styled.div`
 const Description = styled.div`
 background-color: white;
 opacity: 0.7;
-width: 80%;
-height: 80%;
-padding: 40px;
-position: relative;
+width: 90%;
+height: 100%;
+padding: 20px;
+
 `
 
 const TextBox = styled.div`
 width: 90%;
-height: 60%;
+height: 100%;
 background: white;
 color: black;
 border-radius: 10px;
 text-align: center;
-position: absolute;
+
+padding: 20px;
+font-size: 25px;
 `
 
 
@@ -97,27 +101,7 @@ class About extends React.Component {
               Proident commodo labore do aute duis. Mollit consequat veniam esse
               irure nulla incididunt et irure occaecat qui est. Tempor
               incididunt proident non exercitation aute consectetur qui tempor
-              labore eu ullamco. Ex proident nisi aliquip anim officia duis
-              aute. Culpa eiusmod cillum ipsum ea in cillum fugiat tempor nisi
-              aliquip dolor ad tempor aliqua. Cupidatat eu qui aliquip Lorem.
-              Consequat non duis cillum nisi commodo. Dolor sunt magna excepteur
-              ullamco amet anim adipisicing officia. Lorem id elit sint id
-              laboris incididunt ipsum reprehenderit nulla ea ea. Proident
-              officia ea dolore labore sint. Sint elit ea magna nisi dolore non
-              velit sint sunt in dolor. Anim mollit deserunt incididunt
-              cupidatat et ea nulla irure magna. Anim occaecat id laboris
-              consequat consectetur laborum deserunt adipisicing voluptate
-              proident eu reprehenderit. Laborum commodo velit quis cupidatat
-              cillum mollit qui ea dolor occaecat anim minim. Minim deserunt sit
-              tempor deserunt excepteur incididunt non dolor do enim non.
-              Consectetur ut esse est consectetur ullamco magna cillum magna
-              laborum culpa exercitation proident laboris. Cillum sunt sit
-              aliquip esse sit consectetur ex aliquip veniam laborum
-              reprehenderit eiusmod pariatur esse. Consequat do reprehenderit
-              cupidatat pariatur quis nulla et aliquip incididunt aliqua.
-              Commodo ipsum cupidatat velit proident id reprehenderit occaecat
-              incididunt anim. Consequat quis laborum quis tempor mollit. Et
-              dolore ex eu veniam qui ipsum consectetur.
+   
             </TextBox>
           </Description>
           {/* <img

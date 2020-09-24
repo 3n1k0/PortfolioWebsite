@@ -3,7 +3,7 @@ import styled from "styled-components/macro";
  const SectionContainer = styled.div`
   margin: 0 auto;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background: ${({color}) => color};
   scroll-snap-align: start;
   position: relative;
@@ -14,7 +14,6 @@ import styled from "styled-components/macro";
     letter-spacing: 0px;
     text-transform: none;
     line-height: 1.2em;
-    padding-bottom: 30px;
     font-style: italic;
     text-align: center;
   }

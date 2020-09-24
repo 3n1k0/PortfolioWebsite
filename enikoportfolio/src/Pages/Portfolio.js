@@ -17,23 +17,18 @@ const PortfolioContainer = styled.div`
 const ProjectContainer = styled.div`
   width: 100%;
   height: 100%;
+display: grid;
  
 `;
 
 const ProjectImage = styled.img`
-  width: 600px;
-  height: 350px;
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
 
   &:hover {
-    filter: brightness(70%);
+    filter: brightness(60%);
   }
-`;
-
-const ProjectDescription = styled.div`
-  background-color: #f3ecc2;
-  width: 600px;
-  height: 350px;
-  border: 2px solid black;
 `;
 
 class Portfolio extends React.Component {
@@ -44,12 +39,11 @@ class Portfolio extends React.Component {
         <PortfolioContainer>
           <h2>Projects</h2>
           <ProjectContainer>
-            <ProjectImage
+            <a href="https://anniekostolany.com" target ="_blank"><ProjectImage
               alt="Project1"
               src={`https://ucarecdn.com/ca53983a-1dc1-48f6-bc21-7cfde7943e69/-/preview/-/format/auto/`}
               loading="lazy"
-            ></ProjectImage>
-            <ProjectDescription></ProjectDescription>
+            ></ProjectImage></a>
           </ProjectContainer>
         </PortfolioContainer>
       </SectionContainer>
