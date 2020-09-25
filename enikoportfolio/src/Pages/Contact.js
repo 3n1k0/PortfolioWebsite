@@ -4,46 +4,46 @@ import SectionContainer from "../SectionContainer";
 import styled from "styled-components/macro";
 
 const Button = styled.button`
-  padding: 20px;
+  width: 250px;
+  height: 45px;
+  border: none;
+  outline: none;
+  box-shadow: 0 3px 2px 0 grey;
+  color: #fff;
   font-size: 14px;
-  font-weight: 600;
-  font-style: normal;
-  text-transform: uppercase;
-  letter-spacing: 0.15em;
-  padding: 21px 34px;
-  border-width: 2px;
-  border-style: solid;
-  background-color: transparent;
-  width: 150px;
-  margin: 0 auto;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.4);
+
+
   &:hover {
-    background: rgba(10, 10, 10, 0.3);
+    background-color: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
   }
 `;
 
 const Container = styled.div`
-height:100%;
+  min-height: 1200px;
   width: 100%;
   color: #384047;
-
-
   form {
-    max-width: 500px;
+    max-width: 550px;
     margin: 0 auto;
     padding: 10px 20px 30px 20px;
-    background: rgba(255, 182, 193, 0.3);
+    background: white;
     border-radius: 8px;
     position: relative;
     top: 200px;
-    border: none;
+    border: 1px solid black;
     display: flex;
     flex-flow: column;
     justify-content: center;
+    align-items: center;
   }
   fieldset {
     display: flex;
     flex-flow: column;
     border: none;
+    width: 90%;
   }
   input,
   textarea {
@@ -57,16 +57,16 @@ height:100%;
     width: 100%;
     background-color: rgba(214, 212, 208, 0.2);
     color: #384047;
-    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.03) inset;
     margin-bottom: 30px;
     & :focus {
-      box-shadow: 8px 8px 35px rgba(192, 192, 192, 0.3);
+      border: 1px solid black;
     }
   }
   textarea {
     height: 200px;
   }
   h1 {
+    font-family: "Raleway";
     text-transform: uppercase;
     text-align: center;
     font-size: 37px;
@@ -78,7 +78,7 @@ height:100%;
   }
   label {
     padding-bottom: 10px;
-
+    font-family: "Raleway";
     opacity: 0.7;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -89,7 +89,7 @@ class Contact extends React.Component {
   render() {
     return (
       <div>
-        <SectionContainer color="#14b1ab">
+        <SectionContainer color="#ffff">
           <a name="contact"></a>
           <Container>
             <form action="https://formspree.io/mknqqvoz" method="POST">

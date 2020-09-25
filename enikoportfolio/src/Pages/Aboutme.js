@@ -13,49 +13,58 @@ import Progress from "../Progress";
 
 const AboutContainer = styled.div`
   width: 100%;
-  height: 100%;
+  min-height: 150vh;
   background: url("https://images.unsplash.com/photo-1558346648-9757f2fa4474?ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80");
   display: flex;
-  justify-content: center;
-  object-fit: fill;
+  justify-content: flex-start;
+  flex-flow: column nowrap;
+  align-items: center;
 
   h2 {
     color: black;
-
-
   }
 
-  /* img {
-    width: 500px;
+  img {
+    width: 200px;
     height: auto;
-    position: absolute;
-    left: 100px;
-    border-radius: 20%;
 
-  } */
+    border-radius: 50%;
+  }
 `;
 
 const Description = styled.div`
-background-color: white;
-opacity: 0.7;
-width: 90%;
-height: 100%;
-padding: 20px;
-
-`
+  width: 90%;
+  padding: 20px;
+`;
 
 const TextBox = styled.div`
-width: 90%;
-height: 100%;
-background: white;
-color: black;
-border-radius: 10px;
-text-align: center;
+  width: 90%;
+  height: 100%;
+  color: black;
+  border-radius: 10px;
+  text-align: center;
 
-padding: 20px;
-font-size: 25px;
-`
+  padding: 20px;
+  font-size: 25px;
+`;
 
+const Wrapper = styled.div`
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 200px;
+`;
+
+const ListofSkills = styled.div`
+  height: 100%;
+  width: 100%;
+  color: black;
+
+  ul {
+    list-style: none;
+  }
+`;
 
 class About extends React.Component {
   render() {
@@ -63,9 +72,8 @@ class About extends React.Component {
       <SectionContainer color="#f3ecc2">
         <a name="about"></a>
         <AboutContainer>
-
           <Description>
-          <h2>About me</h2>
+            <h2>About me</h2>
             <TextBox>
               Aute et consequat voluptate proident sunt nisi nisi. Dolor culpa
               quis culpa non quis aliquip incididunt deserunt consectetur esse
@@ -79,20 +87,25 @@ class About extends React.Component {
               tempor minim esse dolore et reprehenderit incididunt ad. Dolor ex
               in esse velit ipsum cillum dolor officia eiusmod magna commodo
               enim exercitation laborum. Eiusmod occaecat esse deserunt amet
-              adipisicing labore. 
-   
+              adipisicing labore.
             </TextBox>
           </Description>
-          {/* <img
-            alt="Project1"
-            src={
-              "https://ucarecdn.com/6b826330-9ead-430b-86a7-9b14bfcb9b85/-/preview/-/format/webp/"
-            }
-            loading="lazy"
-          ></img> */}
-
-
-
+          <Wrapper>
+            <img
+              alt="Project1"
+              src={
+                "https://ucarecdn.com/4d78fa47-41cd-4dfa-97e5-79ce16fc0070/-/preview/-/format/webp/"
+              }
+              loading="lazy"
+            ></img>
+            <ListofSkills>
+              <ul>
+                <li>nincs</li>
+                <li>nem letezett</li>
+                <li>nem is volt soha</li>
+              </ul>
+            </ListofSkills>
+          </Wrapper>
         </AboutContainer>
       </SectionContainer>
     );

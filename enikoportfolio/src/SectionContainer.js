@@ -1,12 +1,12 @@
 import styled from "styled-components/macro";
 
  const SectionContainer = styled.div`
-  margin: 0 auto;
   width: 100%;
-  height: 100%;
+  min-height: 100vh;
   background: ${({color}) => color};
   //scroll-snap-align: start;
   position: relative;
+
 
 
   h2 {
@@ -25,7 +25,7 @@ import styled from "styled-components/macro";
     font-size: 1em;
     line-height: 1.5;
     letter-spacing: 0.005em;
-    padding: 13.5px 0px;
+
   }
 `;
 

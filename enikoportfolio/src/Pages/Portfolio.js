@@ -4,12 +4,14 @@ import styled from "styled-components/macro";
 
 const PortfolioContainer = styled.div`
   width: 100%;
-  height: 100%;
+  max-height: 100vh;
 
-  h2 {
+  h1{
+    color: black;
     text-align: center;
-    padding-top: 60px;
-  }
+    padding-bottom: 50px;
+    padding-top: 50px;
+      }
 `;
 
 const ProjectContainer = styled.div`
@@ -58,12 +60,12 @@ const ProjectDetails = styled.div`
 class Portfolio extends React.Component {
   render() {
     return (
-      <SectionContainer color="#f9d56e">
+      <SectionContainer color="#ffff">
         <a name="portfolio"></a>
         <PortfolioContainer>
-          <h2>Projects</h2>
+        <h1>My work & projects</h1>
           <ProjectContainer>
-            {" "}
+          
             <ProjectImage
               alt="Project2"
               src={
@@ -72,7 +74,10 @@ class Portfolio extends React.Component {
               loading="lazy"
             ></ProjectImage>
             <ProjectDetails>
-              <h1>Fast & responsive photography website</h1>
+              
+              <h1>Skills</h1>
+              <p>REACT / CSS / JSX</p>
+              <h1>Features</h1>
               <ul>
                 <li>Optimized SEO</li>
                 <li>Responsive minimalist design</li>
