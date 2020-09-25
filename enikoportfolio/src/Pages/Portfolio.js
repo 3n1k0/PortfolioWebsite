@@ -6,11 +6,12 @@ const PortfolioContainer = styled.div`
   width: 100%;
   max-height: 100vh;
 
-  h1{
+  h2{
     color: black;
     text-align: center;
     padding-bottom: 50px;
     padding-top: 50px;
+    color: black;
       }
 `;
 
@@ -63,7 +64,7 @@ class Portfolio extends React.Component {
       <SectionContainer color="#ffff">
         <a name="portfolio"></a>
         <PortfolioContainer>
-        <h1>My work & projects</h1>
+        <h2>My work & projects</h2>
           <ProjectContainer>
           
             <ProjectImage
@@ -75,7 +76,7 @@ class Portfolio extends React.Component {
             ></ProjectImage>
             <ProjectDetails>
               
-              <h1>Skills</h1>
+             
               <p>REACT / CSS / JSX</p>
               <h1>Features</h1>
               <ul>

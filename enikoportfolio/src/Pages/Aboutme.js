@@ -1,12 +1,4 @@
 import styled from "styled-components/macro";
-import {
-  Button,
-  ButtonContainer,
-  GoToTopButton,
-  Image,
-  ImageContainer,
-  Text,
-} from "../Ui";
 import React from "react";
 import SectionContainer from "../SectionContainer";
 import Progress from "../Progress";
@@ -46,6 +38,7 @@ const TextBox = styled.div`
 
   padding: 20px;
   font-size: 25px;
+  line-height: 1.5;
 `;
 
 const Wrapper = styled.div`
@@ -60,6 +53,7 @@ const ListofSkills = styled.div`
   height: 100%;
   width: 100%;
   color: black;
+  padding-left: 50px;
 
   ul {
     list-style: none;

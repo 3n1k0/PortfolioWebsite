@@ -1,7 +1,6 @@
 import styled from "styled-components/macro";
 import { NavLink } from "react-router-dom";
 import { device } from "./mediaquery";
-import React from 'react'; 
 
 export const CardsContainer = styled.div`
   display: flex;
