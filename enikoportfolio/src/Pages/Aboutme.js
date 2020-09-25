@@ -7,7 +7,6 @@ import {
   ImageContainer,
   Text,
 } from "../Ui";
-import UploadcareImage from "../UploadcareImage";
 import React from "react";
 import SectionContainer from "../SectionContainer";
 import Progress from "../Progress";
@@ -18,6 +17,7 @@ const AboutContainer = styled.div`
   background: url("https://images.unsplash.com/photo-1558346648-9757f2fa4474?ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80");
   display: flex;
   justify-content: center;
+  object-fit: fill;
 
   h2 {
     color: black;
@@ -79,27 +79,7 @@ class About extends React.Component {
               tempor minim esse dolore et reprehenderit incididunt ad. Dolor ex
               in esse velit ipsum cillum dolor officia eiusmod magna commodo
               enim exercitation laborum. Eiusmod occaecat esse deserunt amet
-              adipisicing labore. Incididunt qui est nisi dolore. Exercitation
-              pariatur dolore sit in sunt ullamco eu dolore non laboris deserunt
-              laborum proident. Veniam tempor est sint eiusmod officia irure
-              laboris. Amet cupidatat dolore elit sit excepteur voluptate mollit
-              dolore Lorem excepteur commodo ut. Do culpa in ea laborum. Nostrud
-              elit sunt aliqua voluptate id reprehenderit ipsum amet nostrud
-              nisi. Eu excepteur incididunt enim duis nisi laboris incididunt
-              non esse velit magna duis. Aliquip exercitation consequat sit
-              mollit. Ut duis minim sit officia culpa nisi magna culpa do
-              commodo quis incididunt ex. Laborum occaecat minim sunt cillum.
-              Veniam dolor aliqua anim deserunt nulla. Enim magna culpa dolor
-              labore laboris ea Lorem exercitation pariatur. Laboris ea in
-              voluptate esse eiusmod nisi ad id exercitation in. Aliqua sunt
-              consectetur fugiat tempor qui aliqua labore. Dolore cillum ad esse
-              Lorem. Exercitation excepteur occaecat proident occaecat nostrud
-              adipisicing ea Lorem et non. Dolor aliquip aliqua fugiat
-              incididunt sit. Nulla velit non cillum tempor elit cupidatat
-              aliqua. Officia officia et Lorem aliqua proident laborum minim.
-              Proident commodo labore do aute duis. Mollit consequat veniam esse
-              irure nulla incididunt et irure occaecat qui est. Tempor
-              incididunt proident non exercitation aute consectetur qui tempor
+              adipisicing labore. 
    
             </TextBox>
           </Description>
