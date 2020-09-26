@@ -5,14 +5,24 @@ import styled from "styled-components/macro";
 const PortfolioContainer = styled.div`
   width: 100%;
   max-height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
 
-  h2{
+  h2 {
     color: black;
     text-align: center;
     padding-bottom: 50px;
     padding-top: 50px;
     color: black;
-      }
+  }
+
+  ul{
+    list-style: none;
+    color: black;
+    text-align: center;
+    font-size: 23px;
+  }
 `;
 
 const ProjectContainer = styled.div`
@@ -64,9 +74,18 @@ class Portfolio extends React.Component {
       <SectionContainer color="#ffff">
         <a name="portfolio"></a>
         <PortfolioContainer>
-        <h2>My work & projects</h2>
+          <h2>Technology</h2>
+
+          <ul>
+            <li>HTML, CSS & Bootstrap</li>
+            <li>Wordpress, Squarespace</li>
+            <li>HTML, CSS & Bootstrap</li>
+            <li>Heroku & Netlify</li>
+            <li>Goorm IDE</li>
+            <li>VS Code</li>
+          </ul>
+
           <ProjectContainer>
-          
             <ProjectImage
               alt="Project2"
               src={
@@ -75,8 +94,6 @@ class Portfolio extends React.Component {
               loading="lazy"
             ></ProjectImage>
             <ProjectDetails>
-              
-             
               <p>REACT / CSS / JSX</p>
               <h1>Features</h1>
               <ul>

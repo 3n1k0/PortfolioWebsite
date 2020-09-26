@@ -1,5 +1,6 @@
 import React from "react";
 import SectionContainer from "../SectionContainer";
+import { fonts } from './config'
 
 import styled from "styled-components/macro";
 
@@ -13,6 +14,7 @@ const Button = styled.button`
   font-size: 14px;
   text-shadow: 0 1px rgba(0, 0, 0, 0.4);
   background-color: rgba(0, 0, 0, 0.4);
+  font-family: ${fonts.others};
 
 
   &:hover {
@@ -66,7 +68,7 @@ const Container = styled.div`
     height: 200px;
   }
   h1 {
-    font-family: "Raleway";
+    font-family: ${fonts.titles};
     text-transform: uppercase;
     text-align: center;
     font-size: 37px;

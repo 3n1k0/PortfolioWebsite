@@ -10,7 +10,7 @@ import Portfolio from "./Portfolio";
 import Contact from "./Contact";
 import SectionContainer from "../SectionContainer";
 import useScrollPosition from "../useScrollPosition";
-import { Image, ImageContainer } from "../Ui";
+import { fonts } from './config'
 
 const MainContainer = styled.div`
   width: 100%;
@@ -55,6 +55,7 @@ const Hello = styled.div`
   h2 {
     text-align: center;
     text-shadow: 1px 1px;
+    font-family: ${fonts.others};
   }
 
   i {
@@ -154,7 +155,7 @@ const Home = () => {
         <HomeContainer>
           <Hello>
             <h2>
-              Hello! My name is Eniko and I create shitty websites.
+              Hello! My name is Eniko and I create <br />  beautiful responsive websites.
               <br />
             </h2>
             {/* <i class="fas fa-angle-double-down"></i> */}
@@ -165,7 +166,7 @@ const Home = () => {
       <SectionContainer>
         <About />
       </SectionContainer>
-      
+
       <SectionContainer>
         <Portfolio />
       </SectionContainer>

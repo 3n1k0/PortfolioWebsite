@@ -1,7 +1,7 @@
 import styled from "styled-components/macro";
 import React from "react";
 import SectionContainer from "../SectionContainer";
-import Progress from "../Progress";
+import { fonts } from './config'
 
 const AboutContainer = styled.div`
   width: 100%;
@@ -14,12 +14,16 @@ const AboutContainer = styled.div`
 
   h2 {
     color: black;
+    font-family: ${fonts.titles};
+    background-color: white;
+    width: 35%;
+    font-size: 90px;
+  
   }
 
   img {
     width: 200px;
     height: auto;
-
     border-radius: 50%;
   }
 `;
@@ -27,6 +31,9 @@ const AboutContainer = styled.div`
 const Description = styled.div`
   width: 90%;
   padding: 20px;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
 `;
 
 const TextBox = styled.div`
@@ -46,12 +53,12 @@ const Wrapper = styled.div`
   display: flex;
   justify-content: space-around;
   align-items: center;
-  margin-top: 200px;
+
 `;
 
 const ListofSkills = styled.div`
-  height: 100%;
-  width: 100%;
+  max-height: 300px;
+  max-width: 300px;
   color: black;
   padding-left: 50px;
 
@@ -94,9 +101,9 @@ class About extends React.Component {
             ></img>
             <ListofSkills>
               <ul>
-                <li>nincs</li>
-                <li>nem letezett</li>
-                <li>nem is volt soha</li>
+                <li>Netherlands-based frontend developer</li>
+                <li>Available for freelance</li>
+                <li></li>
               </ul>
             </ListofSkills>
           </Wrapper>
