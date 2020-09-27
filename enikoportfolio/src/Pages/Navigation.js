@@ -8,6 +8,7 @@ const Navbar = styled.nav`
   color: white;
   position: fixed;
   display: flex;
+  align-items: center;
   top: 0;
   z-index: 1;
   background: rgba(0, 0, 0, 0.8);

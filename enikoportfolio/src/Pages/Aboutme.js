@@ -5,8 +5,8 @@ import { fonts } from './config'
 
 const AboutContainer = styled.div`
   width: 100%;
-  min-height: 150vh;
-  background: url("https://images.unsplash.com/photo-1558346648-9757f2fa4474?ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80");
+  min-height: 100vh;
+  /* background: url("https://images.unsplash.com/photo-1558346648-9757f2fa4474?ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80"); */
   display: flex;
   justify-content: flex-start;
   flex-flow: column nowrap;
@@ -15,7 +15,7 @@ const AboutContainer = styled.div`
   h2 {
     color: black;
     font-family: ${fonts.titles};
-    background-color: white;
+   
     width: 35%;
     font-size: 90px;
   
@@ -70,7 +70,7 @@ const ListofSkills = styled.div`
 class About extends React.Component {
   render() {
     return (
-      <SectionContainer color="#f3ecc2">
+      <SectionContainer>
         <a name="about"></a>
         <AboutContainer>
           <Description>

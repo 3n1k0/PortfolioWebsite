@@ -26,12 +26,13 @@ const Button = styled.button`
 const Container = styled.div`
   min-height: 1200px;
   width: 100%;
-  color: #384047;
+  color: black;
+
   form {
     max-width: 550px;
     margin: 0 auto;
     padding: 10px 20px 30px 20px;
-    background: white;
+    background-color: transparent;
     border-radius: 8px;
     position: relative;
     top: 200px;
@@ -58,7 +59,7 @@ const Container = styled.div`
     padding: 15px;
     width: 100%;
     background-color: rgba(214, 212, 208, 0.2);
-    color: #384047;
+    color: black;
     margin-bottom: 30px;
     & :focus {
       border: 1px solid black;
@@ -91,7 +92,7 @@ class Contact extends React.Component {
   render() {
     return (
       <div>
-        <SectionContainer color="#ffff">
+        <SectionContainer>
           <a name="contact"></a>
           <Container>
             <form action="https://formspree.io/mknqqvoz" method="POST">

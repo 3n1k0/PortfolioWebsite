@@ -7,8 +7,11 @@ const GlobalStyle = createGlobalStyle`
     height: 100%;
     background: white;
     color: papayawhip;
-
-
+    background: linear-gradient(270deg, #3cbbe1, #5c1078);
+    background-size: 400% 400%;
+    -webkit-animation: AnimationName 8s ease infinite;
+    -moz-animation: AnimationName 8s ease infinite;
+    animation: AnimationName 8s ease infinite;
 
   }
 
@@ -16,6 +19,24 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
     font-family: "Raleway";
   }
+
+ 
+
+@-webkit-keyframes AnimationName {
+    0%{background-position:47% 0%}
+    50%{background-position:54% 100%}
+    100%{background-position:47% 0%}
+}
+@-moz-keyframes AnimationName {
+    0%{background-position:47% 0%}
+    50%{background-position:54% 100%}
+    100%{background-position:47% 0%}
+}
+@keyframes AnimationName {
+    0%{background-position:47% 0%}
+    50%{background-position:54% 100%}
+    100%{background-position:47% 0%}
+}
 `;
 
 export default GlobalStyle;

@@ -40,7 +40,7 @@ const HomeContainer = styled.div`
   height: 100%;
   width: 100%;
   padding-top: 50px;
-  background: url("https://images.unsplash.com/photo-1499914485622-a88fac536970?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80");
+  /* background: url("https://images.unsplash.com/photo-1499914485622-a88fac536970?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80"); */
   object-fit: fill;
 `;
 
@@ -149,7 +149,7 @@ const Home = () => {
       <GlobalStyle />
       <Navigation />
 
-      <SectionContainer color="#e8505b">
+      <SectionContainer>
         <a name="home"></a>
         <Progress progress={scrollPercentage + "%"} />
         <HomeContainer>
