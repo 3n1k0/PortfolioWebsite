@@ -3,11 +3,19 @@ import SectionContainer from "../SectionContainer";
 import styled from "styled-components/macro";
 import "../cards.css";
 
+
+const Tools = styled.div`
+width: 100%
+`
+
+const IconContainer = styled.div`
+width: 100%`;
+
 const PortfolioContainer = styled.div`
   width: 100%;
   min-height: 100vh;
   display: flex;
-  flex-flow: column nowrap;
+  flex-flow: column wrap;
   align-items: center;
 
   img {
@@ -24,7 +32,7 @@ const PortfolioContainer = styled.div`
 
   ul {
     list-style: none;
-    color: black;
+    color: papayawhip;
     text-align: center;
     font-size: 23px;
   }
@@ -57,12 +65,18 @@ const ProjectDetails = styled.div`
       letter-spacing: 1px;
     }
   }
+  
 `;
 
-const Projects = styled.div`
-display: flex;
 
-`
+
+
+const Projects = styled.div`
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+
+`;
 
 class Portfolio extends React.Component {
   render() {
@@ -73,7 +87,31 @@ class Portfolio extends React.Component {
           <h2>Featured projects</h2>
 
           <Projects>
-            {" "}
+            <div class="container">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Responsive photography website </h5>
+                  <p class="card-text">
+  
+                    <img
+                      alt="Project2"
+                      src={
+                        "https://ucarecdn.com/67aa2ecc-c09c-4aaa-aca7-0b2090ebe3e0/-/preview/-/format/webp/"
+                      }
+                      loading="lazy"
+                    ></img>
+                    <ul>
+                      <li>Optimized SEO</li>
+                      <li>Responsive minimalist design</li>
+                      <li>Uses React</li>
+                    </ul>
+                  </p>
+                  <a href="#" class="btn btn-primary">
+                   Visit website
+                  </a>
+                </div>
+              </div>
+            </div>
             <div class="container">
               <div class="card">
                 <div class="card-body">
@@ -99,23 +137,25 @@ class Portfolio extends React.Component {
                 </div>
               </div>
             </div>
+
             <div class="container">
               <div class="card">
                 <div class="card-body">
-                  <h5 class="card-title">Responsive portfolio website </h5>
+                  <h5 class="card-title">Responsive photography website </h5>
                   <p class="card-text">
-                    REACT / CSS / JSX
-                    <h1>Features</h1>
+    
                     <img
-                      alt="Project1"
+                      alt="Project2"
                       src={
-                        "https://ucarecdn.com/a66c973c-23ca-4c56-a178-b263080a3907/-/preview/-/format/webp/"
+                        "https://ucarecdn.com/67aa2ecc-c09c-4aaa-aca7-0b2090ebe3e0/-/preview/-/format/webp/"
                       }
                       loading="lazy"
                     ></img>
-                    <li>Optimized SEO</li>
-                    <li>Responsive minimalist design</li>
-                    <li>Uses React</li>
+                    <ul>
+                      <li>Optimized SEO</li>
+                      <li>Responsive minimalist design</li>
+                      <li>Uses React</li>
+                    </ul>
                   </p>
                   <a href="#" class="btn btn-primary">
                     Go somewhere
@@ -123,14 +163,48 @@ class Portfolio extends React.Component {
                 </div>
               </div>
             </div>
-            <ul>
+
+            <div class="container">
+              <div class="card">
+                <div class="card-body">
+                  <h5 class="card-title">Responsive photography website </h5>
+                  <p class="card-text">
+
+                    <img
+                      alt="Project2"
+                      src={
+                        "https://ucarecdn.com/67aa2ecc-c09c-4aaa-aca7-0b2090ebe3e0/-/preview/-/format/webp/"
+                      }
+                      loading="lazy"
+                    ></img>
+                    <ul>
+                      <li>Optimized SEO</li>
+                      <li>Responsive minimalist design</li>
+                      <li>Uses React</li>
+                    </ul>
+                  </p>
+                  <a href="#" class="btn btn-primary">
+                    Go somewhere
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <Tools>
+              <h1>Technologies and Tools</h1>
+              <IconContainer>
+
+              </IconContainer>
+            </Tools>
+
+            {/* <ul>
               <li>HTML, CSS & Bootstrap</li>
               <li>Wordpress, Squarespace</li>
               <li>HTML, CSS & Bootstrap</li>
               <li>Heroku & Netlify</li>
               <li>Goorm IDE</li>
               <li>VS Code</li>
-            </ul>
+            </ul> */}
           </Projects>
         </PortfolioContainer>
       </SectionContainer>

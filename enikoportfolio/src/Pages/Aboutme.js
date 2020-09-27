@@ -1,28 +1,18 @@
 import styled from "styled-components/macro";
 import React from "react";
 import SectionContainer from "../SectionContainer";
-import { fonts } from './config'
+import { fonts } from "../config";
+import { Button } from "./Contact";
 
 const AboutContainer = styled.div`
   width: 100%;
-  min-height: 100vh;
-  /* background: url("https://images.unsplash.com/photo-1558346648-9757f2fa4474?ixlib=rb-1.2.1&auto=format&fit=crop&w=2100&q=80"); */
-  display: flex;
-  justify-content: flex-start;
-  flex-flow: column nowrap;
-  align-items: center;
-
-  h2 {
-    color: black;
-    font-family: ${fonts.titles};
-   
-    width: 35%;
-    font-size: 90px;
-  
-  }
+  min-height: 80vh;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  padding-top: 190px;
 
   img {
-    width: 200px;
+    width: 300px;
     height: auto;
     border-radius: 50%;
   }
@@ -30,10 +20,13 @@ const AboutContainer = styled.div`
 
 const Description = styled.div`
   width: 90%;
-  padding: 20px;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+
+  h1 {
+    color: black;
+  }
 `;
 
 const TextBox = styled.div`
@@ -42,29 +35,12 @@ const TextBox = styled.div`
   color: black;
   border-radius: 10px;
   text-align: center;
-
-  padding: 20px;
   font-size: 25px;
   line-height: 1.5;
 `;
 
 const Wrapper = styled.div`
   height: 100%;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-
-`;
-
-const ListofSkills = styled.div`
-  max-height: 300px;
-  max-width: 300px;
-  color: black;
-  padding-left: 50px;
-
-  ul {
-    list-style: none;
-  }
 `;
 
 class About extends React.Component {
@@ -72,23 +48,24 @@ class About extends React.Component {
     return (
       <SectionContainer>
         <a name="about"></a>
+
+        <hr />
         <AboutContainer>
           <Description>
-            <h2>About me</h2>
             <TextBox>
               Aute et consequat voluptate proident sunt nisi nisi. Dolor culpa
               quis culpa non quis aliquip incididunt deserunt consectetur esse
-              sunt. Deserunt qui ex ipsum nostrud Lorem exercitation anim aute
+              sunt.
+              <br /> Deserunt qui ex ipsum nostrud Lorem exercitation anim aute
               proident consectetur. Quis incididunt qui cillum enim sint minim
-              aliquip dolore cillum dolor tempor aute. Dolore eiusmod in
-              voluptate culpa culpa aute commodo qui. In quis velit duis ullamco
-              irure esse id Lorem cillum cupidatat do consectetur. Dolor ea ad
-              laborum eu eiusmod quis ut anim nisi tempor et. Magna laborum
-              nostrud dolore pariatur dolor sit commodo labore duis id. Pariatur
-              tempor minim esse dolore et reprehenderit incididunt ad. Dolor ex
-              in esse velit ipsum cillum dolor officia eiusmod magna commodo
-              enim exercitation laborum. Eiusmod occaecat esse deserunt amet
-              adipisicing labore.
+              aliquip dolore cillum dolor tempor aute. <br /> <br />
+              Dolore eiusmod in voluptate culpa culpa aute commodo qui. <br />
+              <br /> In quis velit duis ullamco irure esse id Lorem cillum
+              cupidatat do consectetur. <br />
+              <br />
+              <Button>
+                Download my CV<i class="fas fa-download"></i>
+              </Button>
             </TextBox>
           </Description>
           <Wrapper>
@@ -99,13 +76,6 @@ class About extends React.Component {
               }
               loading="lazy"
             ></img>
-            <ListofSkills>
-              <ul>
-                <li>Netherlands-based frontend developer</li>
-                <li>Available for freelance</li>
-                <li></li>
-              </ul>
-            </ListofSkills>
           </Wrapper>
         </AboutContainer>
       </SectionContainer>

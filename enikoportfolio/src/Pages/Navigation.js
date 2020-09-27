@@ -12,19 +12,25 @@ const Navbar = styled.nav`
   top: 0;
   z-index: 1;
   background: rgba(0, 0, 0, 0.8);
+  
 
   ul {
     display: flex;
     list-style: none;
     justify-content: space-around;
     align-items: center;
-    width: 100%;
+    width: 100%;    margin: 0;
+    padding: 0;
+
+
 
     li {
       margin: 0 1rem;
       padding: 1rem;
       display: flex;
+
     }
+
 
     a {
       text-decoration: none;

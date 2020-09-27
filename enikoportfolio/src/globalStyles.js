@@ -9,9 +9,9 @@ const GlobalStyle = createGlobalStyle`
     color: papayawhip;
     background: linear-gradient(270deg, #3cbbe1, #5c1078);
     background-size: 400% 400%;
-    -webkit-animation: AnimationName 8s ease infinite;
-    -moz-animation: AnimationName 8s ease infinite;
-    animation: AnimationName 8s ease infinite;
+    -webkit-animation: AnimationName 4s ease infinite;
+    -moz-animation: AnimationName 4s ease infinite;
+    animation: AnimationName 4s ease infinite;
 
   }
 

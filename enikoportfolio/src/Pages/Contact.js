@@ -1,10 +1,9 @@
 import React from "react";
 import SectionContainer from "../SectionContainer";
-import { fonts } from './config'
-
+import { fonts } from '../config'
 import styled from "styled-components/macro";
 
-const Button = styled.button`
+export const Button = styled.button`
   width: 250px;
   height: 45px;
   border: none;
@@ -21,6 +20,10 @@ const Button = styled.button`
     background-color: rgba(0, 0, 0, 0.7);
     cursor: pointer;
   }
+
+  i {
+    padding-left: 20px;
+    }
 `;
 
 const Container = styled.div`

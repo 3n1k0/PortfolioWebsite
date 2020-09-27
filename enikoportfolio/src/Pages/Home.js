@@ -10,7 +10,17 @@ import Portfolio from "./Portfolio";
 import Contact from "./Contact";
 import SectionContainer from "../SectionContainer";
 import useScrollPosition from "../useScrollPosition";
-import { fonts } from './config'
+import { fonts } from "../config";
+import Footer from "./Footer";
+
+const UpArrowWrapper = styled.div`
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  bottom: 70px;
+  right: 30px;
+  font-size: 50px;
+`;
 
 const MainContainer = styled.div`
   width: 100%;
@@ -37,11 +47,8 @@ const OverlayText = styled.div`
 `;
 
 const HomeContainer = styled.div`
-  height: 100%;
   width: 100%;
   padding-top: 50px;
-  /* background: url("https://images.unsplash.com/photo-1499914485622-a88fac536970?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2100&q=80"); */
-  object-fit: fill;
 `;
 
 const Hello = styled.div`
@@ -51,6 +58,8 @@ const Hello = styled.div`
   align-items: center;
   width: 100%;
   height: 100vh;
+  text-align: center;
+  font-size: 50px;
 
   h2 {
     text-align: center;
@@ -66,6 +75,7 @@ const Hello = styled.div`
     -webkit-animation: bounce 1s infinite linear;
     animation: bounce 1s infinite linear;
     position: relative;
+    padding-top: 100px;
   }
 
   @-webkit-keyframes bounce {
@@ -154,11 +164,34 @@ const Home = () => {
         <Progress progress={scrollPercentage + "%"} />
         <HomeContainer>
           <Hello>
-            <h2>
-              Hello! My name is Eniko and I create <br />  beautiful responsive websites.
-              <br />
-            </h2>
-            {/* <i class="fas fa-angle-double-down"></i> */}
+            <Typewriter
+              options={{
+                autoStart: true,
+                loop: true,
+                deleteSpeed: 21,
+                delay: 80,
+              }}
+              onInit={(typewriter) => {
+                typewriter
+                  .start()
+                  .typeString("Hello, I'm Enikő! <br/> ")
+                  .typeString("I'm a FrontEnd Developer")
+
+                  .pauseFor(1000)
+                  .deleteChars(18)
+                  .pauseFor(500)
+                  .typeString("Problem Solver")
+                  .pauseFor(500)
+                  .deleteChars(14)
+                  .pauseFor(500)
+                  .typeString("Creative")
+                  .deleteChars(8)
+                  .pauseFor(500)
+                  .typeString("Fast Learner")
+                  .pauseFor(500);
+              }}
+            />
+            <i class="fas fa-angle-double-down"></i>
           </Hello>
         </HomeContainer>
       </SectionContainer>
@@ -174,6 +207,15 @@ const Home = () => {
       <SectionContainer>
         <Contact />
       </SectionContainer>
+      <UpArrowWrapper>
+        <i
+          onClick={() => {
+            window.scrollTo({ top: 0, behavior: "smooth" });
+          }}
+          class="fas fa-arrow-circle-up"
+        ></i>
+      </UpArrowWrapper>
+      <Footer />
     </MainContainer>
   );
 };
