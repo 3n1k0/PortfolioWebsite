@@ -5,19 +5,19 @@
   transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
     0.3s box-shadow,
     0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
-  padding: 30px;
+  padding: 40px;
   cursor: pointer;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
-  
   max-width: 500px;
   max-height: 500px;
   margin: 50px;
   text-align: center;
   color: white;
 }
+ 
 
 .card:hover {
   transform: scale(1.05);

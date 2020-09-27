@@ -19,7 +19,8 @@ const Navbar = styled.nav`
     list-style: none;
     justify-content: space-around;
     align-items: center;
-    width: 100%;    margin: 0;
+    width: 100%;    
+    margin: 0;
     padding: 0;
 
 

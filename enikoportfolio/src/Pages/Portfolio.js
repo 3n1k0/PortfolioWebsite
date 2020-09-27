@@ -3,13 +3,21 @@ import SectionContainer from "../SectionContainer";
 import styled from "styled-components/macro";
 import "../cards.css";
 
+const ServiceWrapper = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+`;
 
 const Tools = styled.div`
-width: 100%
-`
+  width: 100%;
+  display: flex;
+  justify-content: center;
+`;
 
 const IconContainer = styled.div`
-width: 100%`;
+  width: 100%;
+`;
 
 const PortfolioContainer = styled.div`
   width: 100%;
@@ -17,9 +25,11 @@ const PortfolioContainer = styled.div`
   display: flex;
   flex-flow: column wrap;
   align-items: center;
+  justify-content: center;
 
   img {
     max-width: 500px;
+    padding-bottom: 40px;
   }
 
   h2 {
@@ -34,48 +44,25 @@ const PortfolioContainer = styled.div`
     list-style: none;
     color: papayawhip;
     text-align: center;
-    font-size: 23px;
+    font-size: 19px;
+    line-height: 27px;
+    letter-spacing: -0.56px;
+    font-style: normal;
   }
 `;
-
-const ProjectDetails = styled.div`
-  width: 100%;
-  height: 300px;
-  position: absolute;
-  top: 0;
-  right: 0;
-  visibility: none;
-  opacity: 0;
-
-  &:hover {
-    background: rgba(0, 0, 0, 0.8);
-    color: #fff;
-    visibility: visible;
-    opacity: 1;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: center;
-
-    li {
-      font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-        "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-      list-style: none;
-      font-size: 25px;
-      letter-spacing: 1px;
-    }
-  }
-  
-`;
-
-
-
 
 const Projects = styled.div`
   display: grid;
   grid-template-columns: 1fr 1fr;
 
-
+  h4 {
+    font-size: 24px;
+    font-weight: 100;
+    line-height: 1.5;
+    letter-spacing: 0.84px;
+    font-style: normal;
+    text-transform: uppercase;
+  }
 `;
 
 class Portfolio extends React.Component {
@@ -90,9 +77,8 @@ class Portfolio extends React.Component {
             <div class="container">
               <div class="card">
                 <div class="card-body">
-                  <h5 class="card-title">Responsive photography website </h5>
+                  <h4 class="card-title">Responsive photography website </h4>
                   <p class="card-text">
-  
                     <img
                       alt="Project2"
                       src={
@@ -100,6 +86,7 @@ class Portfolio extends React.Component {
                       }
                       loading="lazy"
                     ></img>
+
                     <ul>
                       <li>Optimized SEO</li>
                       <li>Responsive minimalist design</li>
@@ -107,7 +94,7 @@ class Portfolio extends React.Component {
                     </ul>
                   </p>
                   <a href="#" class="btn btn-primary">
-                   Visit website
+                    Visit website
                   </a>
                 </div>
               </div>
@@ -115,9 +102,8 @@ class Portfolio extends React.Component {
             <div class="container">
               <div class="card">
                 <div class="card-body">
-                  <h5 class="card-title">Responsive photography website </h5>
+                  <h4 class="card-title">Responsive photography website </h4>
                   <p class="card-text">
-                    REACT / CSS / JSX
                     <img
                       alt="Project2"
                       src={
@@ -141,9 +127,8 @@ class Portfolio extends React.Component {
             <div class="container">
               <div class="card">
                 <div class="card-body">
-                  <h5 class="card-title">Responsive photography website </h5>
+                  <h4 class="card-title">Responsive photography website </h4>
                   <p class="card-text">
-    
                     <img
                       alt="Project2"
                       src={
@@ -167,9 +152,8 @@ class Portfolio extends React.Component {
             <div class="container">
               <div class="card">
                 <div class="card-body">
-                  <h5 class="card-title">Responsive photography website </h5>
+                  <h4 class="card-title">Responsive photography website </h4>
                   <p class="card-text">
-
                     <img
                       alt="Project2"
                       src={
@@ -189,15 +173,27 @@ class Portfolio extends React.Component {
                 </div>
               </div>
             </div>
+          </Projects>
+          <Tools>
+            <h1>Technologies and Tools</h1>
+            <IconContainer>
+              <i class="fab fa-html5"></i>
+              <i class="fab fa-css3-alt"></i>
+              <i class="fab fa-js-square"></i>
+              <i class="fab fa-react"></i>
+              <i class="fab fa-git-alt"></i>
+              <i class="fab fa-node"></i>
 
-            <Tools>
-              <h1>Technologies and Tools</h1>
-              <IconContainer>
+              <i class="fab fa-sass"></i>
+            </IconContainer>
+          </Tools>
 
-              </IconContainer>
-            </Tools>
+          <ServiceWrapper>
+            <h1>Services</h1>
+            <IconContainer></IconContainer>
+          </ServiceWrapper>
 
-            {/* <ul>
+          {/* <ul>
               <li>HTML, CSS & Bootstrap</li>
               <li>Wordpress, Squarespace</li>
               <li>HTML, CSS & Bootstrap</li>
@@ -205,7 +201,6 @@ class Portfolio extends React.Component {
               <li>Goorm IDE</li>
               <li>VS Code</li>
             </ul> */}
-          </Projects>
         </PortfolioContainer>
       </SectionContainer>
     );
