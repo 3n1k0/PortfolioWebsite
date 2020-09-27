@@ -63,7 +63,7 @@ class About extends React.Component {
               <br /> In quis velit duis ullamco irure esse id Lorem cillum
               cupidatat do consectetur. <br />
               <br />
-              <Button>
+              <Button a href="">
                 Download my CV<i class="fas fa-download"></i>
               </Button>
             </TextBox>
