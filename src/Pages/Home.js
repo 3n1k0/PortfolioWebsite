@@ -36,6 +36,10 @@ const HomeContainer = styled.div`
   width: 100%;
   padding-top: 50px;
   min-height: 100vh;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center; 
+  justify-content: center;
 `;
 
 const Hello = styled.div`
@@ -60,7 +64,7 @@ const Hello = styled.div`
     margin: 0;
     padding-bottom: 30px;
     color: rgba(0, 0, 0, 0.3);
-    font-size: 54px;
+    font-size: 50px;
   }
 
   i {

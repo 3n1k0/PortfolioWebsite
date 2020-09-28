@@ -14,6 +14,7 @@ export const Button = styled.button`
   text-shadow: 0 1px rgba(0, 0, 0, 0.4);
   background-color: rgba(0, 0, 0, 0.4);
   font-family: ${fonts.others};
+  margin-bottom: 40px;
 
 
   &:hover {
@@ -32,9 +33,9 @@ const Container = styled.div`
   color: black;
 
   form {
-    max-width: 550px;
+    max-width: 460px;
     margin: 0 auto;
-    padding: 10px 20px 30px 20px;
+    /* padding: 10px 20px 30px 20px; */
     background-color: transparent;
     border-radius: 8px;
     position: relative;

@@ -56,7 +56,7 @@ const IconContainer = styled.div`
 
   i {
     color: papayawhip;
-    padding: 30px 70px;
+    padding: 30px 30px;
 
     &:hover {
       text-decoration: none;

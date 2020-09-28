@@ -72,6 +72,7 @@ const Navitem = ({ href, navitemname }) => {
 class Navigation extends React.Component {
   render() {
     return (
+      
       <Navbar>
         <ul>
           <Navitem href="#home" navitemname="Home" />
@@ -80,6 +81,8 @@ class Navigation extends React.Component {
           <Navitem href="#contact" navitemname="Contact" />
         </ul>
       </Navbar>
+
+      
     );
   }
 }

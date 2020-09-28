@@ -27,7 +27,7 @@ const PortfolioButton = styled.a`
 `;
 
 const ServiceWrapper = styled.div`
-  width: 90%;
+  width: 85%;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -55,7 +55,7 @@ const Wrap = styled.div`
 `;
 
 const Tools = styled.div`
-  width: 90%;
+  width: 85%;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -83,12 +83,10 @@ const IconContainer = styled.div`
     padding: 30px;
     font-size: 80px;
 
-    @media ${device.desktop}{
+    @media ${device.desktop} {
       padding: 20px;
     }
   }
-
-
 
   p {
     font-size: 15px;
@@ -146,21 +144,30 @@ const Card = styled.div`
   transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
     0.3s box-shadow,
     0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
-  padding: 40px;
+
   cursor: pointer;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
-  margin: 50px;
+
   text-align: center;
   color: papayawhip;
-  width: 550px;
-  height: 550px;
+  width: 450px;
+  height: 450px;
+  padding: 20px;
+    margin: 30px;
 
   &:hover {
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+  }
+
+  @media ${device.desktop} {
+    padding: 40px;
+    margin: 50px;
+    width: 550px;
+    height: 550px;
   }
 `;
 const CardImage = styled.img`
@@ -168,6 +175,8 @@ const CardImage = styled.img`
   width: 100%;
   height: width;
   filter: brightness(90%);
+  max-width: 250px;
+  max-height: 300px;
 
   @media ${device.desktop} {
     padding-bottom: 20px;
