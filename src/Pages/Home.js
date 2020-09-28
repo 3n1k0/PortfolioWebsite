@@ -49,6 +49,7 @@ const OverlayText = styled.div`
 const HomeContainer = styled.div`
   width: 100%;
   padding-top: 50px;
+  min-height: 100vh;
 `;
 
 const Hello = styled.div`
