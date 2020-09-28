@@ -12,6 +12,7 @@ const ServiceWrapper = styled.div`
   border-radius: 6px;
   padding: 40px;
   margin: 40px;
+  text-decoration: none;
 `;
 
 const Wrap = styled.div`
@@ -32,6 +33,7 @@ const Tools = styled.div`
   height: 100%;
   padding: 40px;
   margin: 40px;
+  text-decoration: none;
 `;
 
 const IconContainer = styled.div`
@@ -42,8 +44,10 @@ const IconContainer = styled.div`
   color: papayawhip;
   font-size: 80px;
 
+
   i {
     padding: 20px;
+
   }
 
   p {
@@ -256,7 +260,7 @@ class Portfolio extends React.Component {
 
               <Wrap>
                 <i class="fab fa-bootstrap"></i>
-                <p>Netlify </p>
+                <p>Bootstrap </p>
               </Wrap>
             </IconContainer>
           </Tools>

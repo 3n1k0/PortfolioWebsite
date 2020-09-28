@@ -32,10 +32,10 @@ const Description = styled.div`
 const TextBox = styled.div`
   width: 90%;
   height: 100%;
-  color: black;
+  color: papayawhip;
   border-radius: 10px;
   text-align: center;
-  font-size: 25px;
+  font-size: 19px;
   line-height: 1.5;
 `;
 
@@ -53,16 +53,15 @@ class About extends React.Component {
         <AboutContainer>
           <Description>
             <TextBox>
-              Aute et consequat voluptate proident sunt nisi nisi. Dolor culpa
-              quis culpa non quis aliquip incididunt deserunt consectetur esse
-              sunt.
-              <br /> Deserunt qui ex ipsum nostrud Lorem exercitation anim aute
-              proident consectetur. Quis incididunt qui cillum enim sint minim
-              aliquip dolore cillum dolor tempor aute. <br /> <br />
-              Dolore eiusmod in voluptate culpa culpa aute commodo qui. <br />
-              <br /> In quis velit duis ullamco irure esse id Lorem cillum
-              cupidatat do consectetur. <br />
-              <br />
+              My name is Eniko and I am a Web Developer based in Amsterdam. I am
+              passionate about creating dynamic and intuitive user experiences.
+              My main interests lie on new technologies and bringing unique
+              ideas into life by building highly functioning websites and
+              applications.<br /> Contributing to the creation of high-quality
+              products that are user centered is what drives my work ethic. <br /> <br /> I am
+              a problem solver with great attention to detail and creativity,
+              and I am always learning new technologies and methodologies in
+              order to help businesses grow. 
               <Button a href="">
                 Download my CV<i class="fas fa-download"></i>
               </Button>

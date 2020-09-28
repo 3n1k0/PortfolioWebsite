@@ -20,6 +20,7 @@ const InsideWrapper = styled.a`
 display: flex;
 flex-flow: column;
 align-items: center; 
+text-decoration: none;
 `
 
 const Text = styled.div`
@@ -40,9 +41,14 @@ const IconContainer = styled.div`
   align-items: center;
   justify-content: center;
   font-size: 100px;
+
   i {
     color: papayawhip;
     padding: 30px 70px;
+   
+   &:hover{
+    text-decoration: none;
+   }
 
     p {
       font-size: 20px;

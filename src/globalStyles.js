@@ -7,17 +7,14 @@ const GlobalStyle = createGlobalStyle`
     height: 100%;
     background: white;
     color: papayawhip;
-    background: linear-gradient(270deg, #3cbbe1, #5c1078);
-    background-size: 400% 400%;
-    /* -webkit-animation: AnimationName 4s ease infinite;
-    -moz-animation: AnimationName 4s ease infinite;
-    animation: AnimationName 4s ease infinite; */
-
+    background: rgb(59,0,105);
+background: radial-gradient(circle, rgba(59,0,105,0.7553396358543417) 27%, rgba(47,69,184,1) 90%);
   }
 
   *{
     box-sizing: border-box;
     font-family: "Raleway";
+    text-decoration: none;
   }
 
  
