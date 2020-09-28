@@ -1,18 +1,18 @@
 import styled from "styled-components/macro";
 import React from "react";
 import SectionContainer from "../SectionContainer";
-import { fonts } from "../config";
 import { Button } from "./Contact";
 
 const AboutContainer = styled.div`
-  width: 100%;
-  min-height: 80vh;
+  width: 85%;
+  min-height: 100vh;
   display: grid;
   grid-template-columns: 3fr 1fr;
-  padding-top: 190px;
+  padding-top: 40px;
+  margin: 0 auto;
 
   img {
-    width: 300px;
+    width: 250px;
     height: auto;
     border-radius: 50%;
   }
@@ -48,19 +48,20 @@ class About extends React.Component {
     return (
       <SectionContainer>
         <a name="about"></a>
-
-        <hr />
+        <h2>About me</h2>
         <AboutContainer>
+      
           <Description>
+         
             <TextBox>
-              My name is Eniko and I am a Web Developer based in Amsterdam. I am
-              passionate about creating dynamic and intuitive user experiences.
-              My main interests lie on new technologies and bringing unique
+              My name is Eniko and I am a Web Developer based in Amsterdam.
+              My passion is to create dynamic and intuitive user experience.
+             I love new technologies and always invested in bringing unique
               ideas into life by building highly functioning websites and
-              applications.<br /> Contributing to the creation of high-quality
-              products that are user centered is what drives my work ethic. <br /> <br /> I am
-              a problem solver with great attention to detail and creativity,
-              and I am always learning new technologies and methodologies in
+              applications.<br /> Contributing to the creation of user-centered high-quality
+              products is what drives my work ethic. <br /> <br /> I am
+              a resourceful problem solver with great attention to detail.
+              I am constantly learning new technologies and methodologies in
               order to help businesses grow. 
               <br /> <br /> 
               <Button a href="http://eniko.dev/assets/eniko-kosztolanyi-CV.pdf">
@@ -70,7 +71,7 @@ class About extends React.Component {
           </Description>
           <Wrapper>
             <img
-              alt="Project1"
+              alt="Eniko Kosztolanyi"
               src={
                 "https://ucarecdn.com/4d78fa47-41cd-4dfa-97e5-79ce16fc0070/-/preview/-/format/webp/"
               }

@@ -3,6 +3,29 @@ import SectionContainer from "../SectionContainer";
 import styled from "styled-components/macro";
 import "../cards.css";
 
+const PortfolioButton = styled.a`
+  width: 150px;
+  height: 44px;
+  border: none;
+  outline: none;
+  border-radius: 6px;
+  color: #fff;
+  font-size: 16px;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.4);
+  font-family: "Raleway";
+  cursor: pointer;
+  color: papayawhip;
+  background-color: #007bff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  p {
+    font-family: "Raleway";
+  }
+`;
+
 const ServiceWrapper = styled.div`
   width: 60%;
   display: flex;
@@ -44,10 +67,8 @@ const IconContainer = styled.div`
   color: papayawhip;
   font-size: 80px;
 
-
   i {
     padding: 20px;
-
   }
 
   p {
@@ -63,18 +84,6 @@ const PortfolioContainer = styled.div`
   align-items: center;
   justify-content: center;
 
-  img {
-    padding-bottom: 40px;
-    width: 100%;
-  }
-
-  h2 {
-    color: papayawhip;
-    text-align: center;
-    padding-bottom: 50px;
-    padding-top: 50px;
-    opacity: 0.8;
-  }
 
   ul {
     list-style: none;
@@ -111,30 +120,33 @@ class Portfolio extends React.Component {
           <h2>Featured projects</h2>
 
           <Projects>
-          <div class="container">
+            <div class="container">
               <div class="card">
                 <div class="card-body">
                   <h4 class="card-title">Responsive photography website </h4>
-                  <img
-                    alt="Project2"
-                    src={
-                      "https://ucarecdn.com/67aa2ecc-c09c-4aaa-aca7-0b2090ebe3e0/-/preview/-/format/webp/"
-                    }
-                    loading="lazy"
-                  ></img>
-                  <p class="card-text">
-                    A singlepage website built to showcase photography portfolio. Responsive designed and optimized SEO.
-                    <br />
-                    Technologies and tools used:
-                    <br />
-                    HTML | CSS - Media Queries | VSCode
-                  </p>
-                  <a href="https://anniekostolany.com" class="btn btn-primary">
-                    Visit website
-                  </a>
+                    <img
+                      alt="Project2"
+                      src={
+                        "https://ucarecdn.com/67aa2ecc-c09c-4aaa-aca7-0b2090ebe3e0/-/preview/-/format/webp/"
+                      }
+                      loading="lazy"
+                    ></img>
+
                 </div>
+                <p class="card-text">
+                  A singlepage website built to showcase photography portfolio.
+                  Responsive designed and optimized SEO.
+                  <br />
+                  Technologies and tools used:
+                  <br />
+                  HTML | CSS - Media Queries | VSCode
+                </p>
+                <PortfolioButton href="https://anniekostolany.com">
+                  <p>Visit website</p>
+                </PortfolioButton>
               </div>
             </div>
+
             <div class="container">
               <div class="card">
                 <div class="card-body">
@@ -154,9 +166,12 @@ class Portfolio extends React.Component {
                     <br />
                     HTML | CSS - Media Queries | VSCode
                   </p>
-                  <a href="https://github.com/3n1k0/PortfolioWebsite" class="btn btn-primary">
-                  See on GitHub <i class="fab fa-github"></i>
-                  </a>
+
+                  <PortfolioButton href="https://github.com/3n1k0/PortfolioWebsite">
+                    <p>
+                      See on GitHub <i class="fab fa-github"></i>
+                    </p>
+                  </PortfolioButton>
                 </div>
               </div>
             </div>
@@ -173,15 +188,18 @@ class Portfolio extends React.Component {
                     loading="lazy"
                   ></img>
                   <p class="card-text">
-                    A simple game to teach how RGB colors work. 
+                    A simple game to teach how RGB colors work.
                     <br />
                     Technologies and tools used:
                     <br />
                     HTML | JavaScript | VSCode
                   </p>
-                  <a href="https://github.com/3n1k0/Color-Guessing-Game" class="btn btn-primary">
-                    See on GitHub <i class="fab fa-github"></i>
-                  </a>
+
+                  <PortfolioButton href="https://github.com/3n1k0/Color-Guessing-Game">
+                    <p>
+                      See on GitHub <i class="fab fa-github"></i>
+                    </p>
+                  </PortfolioButton>
                 </div>
               </div>
             </div>
@@ -205,13 +223,15 @@ class Portfolio extends React.Component {
                     <br />
                     HTML | SASS | JavaScript | VSCode
                   </p>
-                  <a href="https://github.com/3n1k0/The-Cat-Memory-Game" class="btn btn-primary">
-                  See on GitHub <i class="fab fa-github"></i>
-                  </a>
+
+                  <PortfolioButton href="https://github.com/3n1k0/The-Cat-Memory-Game">
+                    <p>
+                      See on GitHub <i class="fab fa-github"></i>
+                    </p>
+                  </PortfolioButton>
                 </div>
               </div>
             </div>
-
           </Projects>
           <Tools>
             <h1>Tools and Technologies</h1>
@@ -282,15 +302,6 @@ class Portfolio extends React.Component {
               </Wrap>
             </IconContainer>
           </ServiceWrapper>
-
-          {/* <ul>
-              <li>HTML, CSS & Bootstrap</li>
-              <li>Wordpress, Squarespace</li>
-              <li>HTML, CSS & Bootstrap</li>
-              <li>Heroku & Netlify</li>
-              <li>Goorm IDE</li>
-              <li>VS Code</li>
-            </ul> */}
         </PortfolioContainer>
       </SectionContainer>
     );

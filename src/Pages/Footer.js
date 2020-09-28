@@ -73,7 +73,7 @@ class Footer extends React.Component {
         <IconContainer>
           <InsideWrapper a href="mailto:eniko.kosztolanyi@gmail.com">
             <i class="far fa-envelope"></i>
-            <Text></Text>
+         
           </InsideWrapper>
 
           <InsideWrapper>

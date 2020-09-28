@@ -3,7 +3,7 @@ import { fonts } from './config'
 
  const SectionContainer = styled.div`
   width: 100%;
-  min-height: 50vh;
+  min-height: 100vh;
   background: ${({color}) => color};
   //scroll-snap-align: start;
   position: relative;

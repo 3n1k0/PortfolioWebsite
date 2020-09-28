@@ -12,6 +12,7 @@ import SectionContainer from "../SectionContainer";
 import useScrollPosition from "../useScrollPosition";
 import { fonts } from "../config";
 import Footer from "./Footer";
+import { BounceArrow } from '../BounceArrow.css'
 
 const UpArrowWrapper = styled.div`
   width: 50px;
@@ -28,22 +29,6 @@ const MainContainer = styled.div`
   overflow-y: scroll;
   scroll-behavior: smooth;
   scroll-snap-type: y mandatory;
-`;
-
-const OverlayText = styled.div`
-  position: relative;
-  color: white;
-  font-size: 15px;
-  padding: 10px;
-  font-family: "Courier New", monospace;
-  text-align: center;
-
-  @media ${device.tablet} {
-    font-size: 20px;
-  }
-  @media ${device.desktop} {
-    font-size: 15px;
-  }
 `;
 
 const HomeContainer = styled.div`
@@ -77,77 +62,6 @@ const Hello = styled.div`
     animation: bounce 1s infinite linear;
     position: relative;
     padding-top: 100px;
-  }
-
-  @-webkit-keyframes bounce {
-    0% {
-      top: 0;
-    }
-    50% {
-      top: -0.2em;
-    }
-    70% {
-      top: -0.3em;
-    }
-    100% {
-      top: 0;
-    }
-  }
-  @-moz-keyframes bounce {
-    0% {
-      top: 0;
-    }
-    50% {
-      top: -0.2em;
-    }
-    70% {
-      top: -0.3em;
-    }
-    100% {
-      top: 0;
-    }
-  }
-  @-o-keyframes bounce {
-    0% {
-      top: 0;
-    }
-    50% {
-      top: -0.2em;
-    }
-    70% {
-      top: -0.3em;
-    }
-    100% {
-      top: 0;
-    }
-  }
-  @-ms-keyframes bounce {
-    0% {
-      top: 0;
-    }
-    50% {
-      top: -0.2em;
-    }
-    70% {
-      top: -0.3em;
-    }
-    100% {
-      top: 0;
-    }
-  }
-  @keyframes bounce {
-    0% {
-      top: 0;
-    }
-    50% {
-      top: -0.2em;
-    }
-    70% {
-      top: -0.3em;
-    }
-    100% {
-      top: 0;
-    }
   }
 `;
 
@@ -211,7 +125,7 @@ const Home = () => {
       <UpArrowWrapper>
         <i
           onClick={() => {
-            window.scrollTo({ top: 0, behavior: "smooth" });
+            mainContainerRef.current.scrollTo({ top: 0, behavior: "smooth" });
           }}
           class="fas fa-arrow-circle-up"
         ></i>
