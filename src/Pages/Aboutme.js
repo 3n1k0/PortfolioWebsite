@@ -62,7 +62,8 @@ class About extends React.Component {
               a problem solver with great attention to detail and creativity,
               and I am always learning new technologies and methodologies in
               order to help businesses grow. 
-              <Button a href="">
+              <br /> <br /> 
+              <Button a href="http://eniko.dev/assets/eniko-kosztolanyi-CV.pdf">
                 Download my CV<i class="fas fa-download"></i>
               </Button>
             </TextBox>
