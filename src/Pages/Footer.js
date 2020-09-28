@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "styled-components/macro";
+import { device } from "../mediaquery";
 
 const FooterText = styled.div`
   text-align: center;
@@ -17,16 +18,16 @@ const FooterText = styled.div`
 `;
 
 const InsideWrapper = styled.a`
-display: flex;
-flex-flow: column;
-align-items: center; 
-text-decoration: none;
-`
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  text-decoration: none;
+`;
 
 const Text = styled.div`
-font-family: 'Raleway';
-font-size: 15px;
-`
+  font-family: "Raleway";
+  font-size: 15px;
+`;
 
 const Wrapper = styled.div`
   width: 100%;
@@ -34,31 +35,45 @@ const Wrapper = styled.div`
   flex-flow: column;
   align-items: center;
   margin-top: 80px;
+  text-align: center;
+
+  p{
+
+    width: 80%;
+
+  @media ${device.desktop}{
+    width: 100%;
+  }
+}
 `;
+
 const IconContainer = styled.div`
   height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 100px;
+  font-size: 50px;
 
   i {
     color: papayawhip;
     padding: 30px 70px;
-   
-   &:hover{
-    text-decoration: none;
-   }
+
+    &:hover {
+      text-decoration: none;
+    }
 
     p {
       font-size: 20px;
       font-family: "Raleway";
       padding-top: 20px;
     }
+
+    @media ${device.desktop} {
+      width: 100%;
+      font-size: 100px;
+    }
   }
 `;
-
-
 
 class Footer extends React.Component {
   render() {
@@ -73,7 +88,6 @@ class Footer extends React.Component {
         <IconContainer>
           <InsideWrapper a href="mailto:eniko.kosztolanyi@gmail.com">
             <i class="far fa-envelope"></i>
-         
           </InsideWrapper>
 
           <InsideWrapper>

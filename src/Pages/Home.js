@@ -12,7 +12,7 @@ import SectionContainer from "../SectionContainer";
 import useScrollPosition from "../useScrollPosition";
 import { fonts } from "../config";
 import Footer from "./Footer";
-import { BounceArrow } from '../BounceArrow.css'
+import { BounceArrow } from "../BounceArrow.css";
 
 const UpArrowWrapper = styled.div`
   width: 50px;
@@ -21,6 +21,7 @@ const UpArrowWrapper = styled.div`
   bottom: 70px;
   right: 30px;
   font-size: 50px;
+  cursor: pointer;
 `;
 
 const MainContainer = styled.div`
@@ -48,9 +49,18 @@ const Hello = styled.div`
   font-size: 50px;
 
   h2 {
-    text-align: center;
-    text-shadow: 1px 1px;
-    font-family: ${fonts.others};
+    font-weight: 400;
+    opacity: 1;
+    padding-bottom: 0;
+    margin: 0;
+  }
+
+  p {
+    padding-top: 0;
+    margin: 0;
+    padding-bottom: 30px;
+    color: rgba(0, 0, 0, 0.3);
+    font-size: 54px;
   }
 
   i {
@@ -79,6 +89,8 @@ const Home = () => {
         <Progress progress={scrollPercentage + "%"} />
         <HomeContainer>
           <Hello>
+            <h2>Hello, I'm Enikő!</h2>
+            <p>[ ˈɛnikøː]</p>
             <Typewriter
               options={{
                 autoStart: true,
@@ -89,20 +101,20 @@ const Home = () => {
               onInit={(typewriter) => {
                 typewriter
                   .start()
-                  .typeString("Hello, I'm Enikő! <br/> ")
-                  .typeString("I'm a FrontEnd Developer")
+                  .typeString("I'm a <b>FrontEnd Developer</b>")
 
                   .pauseFor(1000)
                   .deleteChars(18)
                   .pauseFor(500)
-                  .typeString("Problem Solver")
+                  .typeString("<b>Problem Solver</b>")
                   .pauseFor(500)
                   .deleteChars(14)
                   .pauseFor(500)
-                  .typeString("Creative")
+                  .typeString("<b>Creative</b>")
+                  .pauseFor(500)
                   .deleteChars(8)
                   .pauseFor(500)
-                  .typeString("Fast Learner")
+                  .typeString("<b>Fast Learner</b>")
                   .pauseFor(500);
               }}
             />
@@ -122,14 +134,19 @@ const Home = () => {
       <SectionContainer>
         <Contact />
       </SectionContainer>
-      <UpArrowWrapper>
+
+      <UpArrowWrapper style={{ opacity: scrollPercentage / 10 }}>
         <i
           onClick={() => {
-            mainContainerRef.current.scrollTo({ top: 0, behavior: "smooth" });
+            mainContainerRef.current.scrollTo({
+              top: 0,
+              behavior: "smooth",
+            });
           }}
           class="fas fa-arrow-circle-up"
         ></i>
       </UpArrowWrapper>
+
       <Footer />
     </MainContainer>
   );

@@ -1,9 +1,10 @@
 import styled from "styled-components/macro";
 import { fonts } from './config'
-
+import { device } from './mediaquery'
+ 
  const SectionContainer = styled.div`
   width: 100%;
-  min-height: 100vh;
+  min-height: 80vh;
   background: ${({color}) => color};
   //scroll-snap-align: start;
   position: relative;
@@ -20,6 +21,14 @@ import { fonts } from './config'
     text-align: center;
   }
 
+
+  @media ${device.desktop}{
+  width: 100%;
+  min-height: 80vh;
+  background: ${({color}) => color};
+  //scroll-snap-align: start;
+  position: relative;
+  }
 
 `;
 

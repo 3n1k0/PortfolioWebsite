@@ -1,7 +1,7 @@
 import React from "react";
 import SectionContainer from "../SectionContainer";
 import styled from "styled-components/macro";
-import "../cards.css";
+import { device } from "../mediaquery";
 
 const PortfolioButton = styled.a`
   width: 150px;
@@ -27,7 +27,7 @@ const PortfolioButton = styled.a`
 `;
 
 const ServiceWrapper = styled.div`
-  width: 60%;
+  width: 90%;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -36,18 +36,26 @@ const ServiceWrapper = styled.div`
   padding: 40px;
   margin: 40px;
   text-decoration: none;
+
+  @media ${device.desktop} {
+    width: 60%;
+  }
 `;
 
 const Wrap = styled.div`
   display: flex;
   flex-flow: column wrap;
-  margin: 30px;
+  margin: 5px;
   align-items: center;
   justify-content: center;
+
+  @media ${device.desktop} {
+    margin: 30px;
+  }
 `;
 
 const Tools = styled.div`
-  width: 60%;
+  width: 90%;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -57,6 +65,10 @@ const Tools = styled.div`
   padding: 40px;
   margin: 40px;
   text-decoration: none;
+
+  @media ${device.desktop} {
+    width: 60%;
+  }
 `;
 
 const IconContainer = styled.div`
@@ -65,14 +77,25 @@ const IconContainer = styled.div`
   flex-flow: row wrap;
   justify-content: center;
   color: papayawhip;
-  font-size: 80px;
+  font-size: 50px;
 
   i {
-    padding: 20px;
+    padding: 30px;
+    font-size: 80px;
+
+    @media ${device.desktop}{
+      padding: 20px;
+    }
   }
 
+
+
   p {
-    font-size: 20px;
+    font-size: 15px;
+
+    @media ${device.desktop} {
+      font-size: 20px;
+    }
   }
 `;
 
@@ -83,7 +106,6 @@ const PortfolioContainer = styled.div`
   flex-flow: column wrap;
   align-items: center;
   justify-content: center;
-
 
   ul {
     list-style: none;
@@ -97,8 +119,10 @@ const PortfolioContainer = styled.div`
 `;
 
 const Projects = styled.div`
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
 
   h4 {
     font-size: 20px;
@@ -107,8 +131,63 @@ const Projects = styled.div`
     letter-spacing: 0.84px;
     font-style: normal;
     opacity: 0.8;
-    /* text-transform: uppercase; */
   }
+
+  @media ${device.desktop} {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+`;
+
+const Card = styled.div`
+  border-radius: 20px;
+  background: transparent;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+  transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
+    0.3s box-shadow,
+    0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+  padding: 40px;
+  cursor: pointer;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  margin: 50px;
+  text-align: center;
+  color: papayawhip;
+  width: 550px;
+  height: 550px;
+
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06);
+  }
+`;
+const CardImage = styled.img`
+  padding-bottom: 20px;
+  width: 100%;
+  height: width;
+  filter: brightness(90%);
+
+  @media ${device.desktop} {
+    padding-bottom: 20px;
+    width: 100%;
+    max-width: 300px;
+    max-height: 250px;
+    filter: brightness(90%);
+  }
+`;
+
+const CardBody = styled.div`
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+`;
+
+const CardText = styled.p`
+  text-align: center;
+  width: 100%;
 `;
 
 class Portfolio extends React.Component {
@@ -121,43 +200,42 @@ class Portfolio extends React.Component {
 
           <Projects>
             <div class="container">
-              <div class="card">
-                <div class="card-body">
+              <Card>
+                <CardBody>
                   <h4 class="card-title">Responsive photography website </h4>
-                    <img
-                      alt="Project2"
-                      src={
-                        "https://ucarecdn.com/67aa2ecc-c09c-4aaa-aca7-0b2090ebe3e0/-/preview/-/format/webp/"
-                      }
-                      loading="lazy"
-                    ></img>
-
-                </div>
-                <p class="card-text">
+                  <CardImage
+                    alt="Project2"
+                    src={
+                      "https://ucarecdn.com/67aa2ecc-c09c-4aaa-aca7-0b2090ebe3e0/-/preview/-/format/webp/"
+                    }
+                    loading="lazy"
+                  ></CardImage>
+                </CardBody>
+                <CardText>
                   A singlepage website built to showcase photography portfolio.
                   Responsive designed and optimized SEO.
                   <br />
                   Technologies and tools used:
                   <br />
                   HTML | CSS - Media Queries | VSCode
-                </p>
+                </CardText>
                 <PortfolioButton href="https://anniekostolany.com">
                   <p>Visit website</p>
                 </PortfolioButton>
-              </div>
+              </Card>
             </div>
 
             <div class="container">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">Responsive portfolio website </h4>
-                  <img
+              <Card>
+                <CardBody>
+                  <h4 class="card-title">Responsive photography website </h4>
+                  <CardImage
                     alt="Project2"
                     src={
                       "https://ucarecdn.com/6e552d8d-3b2c-41a9-a601-e95fcc00aaf7/-/preview/-/format/webp/"
                     }
                     loading="lazy"
-                  ></img>
+                  ></CardImage>
                   <p class="card-text">
                     A singlepage website built to apply Responsive Web Design
                     skills.
@@ -172,21 +250,21 @@ class Portfolio extends React.Component {
                       See on GitHub <i class="fab fa-github"></i>
                     </p>
                   </PortfolioButton>
-                </div>
-              </div>
+                </CardBody>
+              </Card>
             </div>
 
             <div class="container">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">RGB Color Guessing Game </h4>
-                  <img
+              <Card>
+                <CardBody>
+                  <h4 class="card-title">Responsive photography website </h4>
+                  <CardImage
                     alt="Project2"
                     src={
                       "https://ucarecdn.com/b7b481db-dae3-4c48-9b52-48308b077342/-/preview/-/format/webp/"
                     }
                     loading="lazy"
-                  ></img>
+                  ></CardImage>
                   <p class="card-text">
                     A simple game to teach how RGB colors work.
                     <br />
@@ -200,21 +278,21 @@ class Portfolio extends React.Component {
                       See on GitHub <i class="fab fa-github"></i>
                     </p>
                   </PortfolioButton>
-                </div>
-              </div>
+                </CardBody>
+              </Card>
             </div>
 
             <div class="container">
-              <div class="card">
-                <div class="card-body">
-                  <h4 class="card-title">Cat Memory Game </h4>
-                  <img
+              <Card>
+                <CardBody>
+                  <h4 class="card-title">Responsive photography website </h4>
+                  <CardImage
                     alt="Project2"
                     src={
                       "https://ucarecdn.com/66d89e57-f70f-4bd1-bc4a-75446629affb/-/preview/-/format/webp/"
                     }
                     loading="lazy"
-                  ></img>
+                  ></CardImage>
                   <p class="card-text">
                     A singlepage website built to apply Responsive Web Design
                     skills.
@@ -229,8 +307,8 @@ class Portfolio extends React.Component {
                       See on GitHub <i class="fab fa-github"></i>
                     </p>
                   </PortfolioButton>
-                </div>
-              </div>
+                </CardBody>
+              </Card>
             </div>
           </Projects>
           <Tools>

@@ -21,7 +21,6 @@ background: radial-gradient(circle, rgba(59,0,105,0.7553396358543417) 27%, rgba(
     color: papayawhip;
     text-align: center;
     padding-bottom: 50px;
-
     opacity: 0.8;
   }
 
