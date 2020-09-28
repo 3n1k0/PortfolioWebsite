@@ -18,9 +18,9 @@ const AboutContainer = styled.div`
     height: 60vh;
   }
     @media ${device.tablet} {
-    display: flex;
     display: grid;
     grid-template-columns: 2fr 1fr;
+    max-height: 60vh;
   }
 `;
 
@@ -43,13 +43,16 @@ const TextBox = styled.div`
   text-align: center;
   font-size: 19px;
   line-height: 1.5;
+
+  @media ${device.desktop}{
+    width: 80%;
+  }
 `;
 
 const Wrapper = styled.div`
   height: 100%;
   margin: 0 auto;
-  padding: 30px;
-  width: 90%;
+  width: 100%;
 
   img {
     width: 100%;

@@ -15,6 +15,7 @@ export const Button = styled.button`
   background-color: rgba(0, 0, 0, 0.4);
   font-family: ${fonts.others};
   margin-bottom: 40px;
+  text-align: center;
 
 
   &:hover {

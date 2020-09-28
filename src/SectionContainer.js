@@ -6,7 +6,6 @@ const SectionContainer = styled.div`
   width: 100%;
   min-height: 80vh;
   background: ${({ color }) => color};
-  //scroll-snap-align: start;
   position: relative;
 
   h2 {
@@ -16,11 +15,10 @@ const SectionContainer = styled.div`
     line-height: 1em;
     font-family: ${fonts.titles};
     text-align: center;
-
     color: papayawhip;
     text-align: center;
     padding-bottom: 50px;
-    opacity: 0.8;
+    opacity: 0.5;
   }
 
   @media ${device.desktop} {
