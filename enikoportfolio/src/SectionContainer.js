@@ -8,7 +8,7 @@ import { fonts } from './config'
   //scroll-snap-align: start;
   position: relative;
 
-padding: 30px;
+
 
 
   h2 {
@@ -20,15 +20,7 @@ padding: 30px;
     text-align: center;
   }
 
-  p {
-    font-size: 18px;
-    text-align: left;
-    text-justify: inter-word;
-    font-size: 1em;
-    line-height: 1.5;
-    letter-spacing: 0.005em;
 
-  }
 `;
 
 export default SectionContainer;

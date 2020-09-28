@@ -7,7 +7,6 @@ import Portfolio from "./Pages/Portfolio";
 import Notfound from "./Pages/Notfound";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
-
 ReactDOM.render(
   <div>
     <BrowserRouter>

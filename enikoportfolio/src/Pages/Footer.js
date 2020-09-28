@@ -13,9 +13,10 @@ const FooterText = styled.div`
   align-items: center;
   font-family: "Raleway";
   font-weight: 100;
+  margin-top: 80px;
 `;
 
-const InsideWrapper = styled.div`
+const InsideWrapper = styled.a`
 display: flex;
 flex-flow: column;
 align-items: center; 
@@ -31,6 +32,7 @@ const Wrapper = styled.div`
   display: flex;
   flex-flow: column;
   align-items: center;
+  margin-top: 80px;
 `;
 const IconContainer = styled.div`
   height: 200px;
@@ -63,7 +65,7 @@ class Footer extends React.Component {
         </p>
 
         <IconContainer>
-          <InsideWrapper>
+          <InsideWrapper a href="mailto:eniko.kosztolanyi@gmail.com">
             <i class="far fa-envelope"></i>
             <Text></Text>
           </InsideWrapper>

@@ -11,13 +11,25 @@
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
-  max-width: 500px;
-  max-height: 500px;
+  width: 500px;
+  height: 500px;
   margin: 50px;
   text-align: center;
-  color: white;
+  color: papayawhip;
 }
  
+
+.card-body{
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-text{
+  text-align: center;
+  width: 100%;
+}
 
 .card:hover {
   transform: scale(1.05);
