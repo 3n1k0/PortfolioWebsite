@@ -55,15 +55,15 @@ const Wrap = styled.div`
 `;
 
 const Tools = styled.div`
-  width: 85%;
+  width: 90%;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   background: rgba(0, 0, 3, 0.2);
   border-radius: 6px;
   height: 100%;
-  padding: 40px;
-  margin: 40px;
+  padding: 20px;
+  margin: 20px;
   text-decoration: none;
 
   @media ${device.desktop} {
@@ -98,7 +98,7 @@ const IconContainer = styled.div`
 `;
 
 const PortfolioContainer = styled.div`
-  width: 100%;
+  width: 90%;
   min-height: 100vh;
   display: flex;
   flex-flow: column wrap;
@@ -117,10 +117,7 @@ const PortfolioContainer = styled.div`
 `;
 
 const Projects = styled.div`
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  justify-content: center;
+  display: grid;
 
   h4 {
     font-size: 20px;
@@ -153,7 +150,7 @@ const Card = styled.div`
 
   text-align: center;
   color: papayawhip;
-  width: 450px;
+  width: 430px;
   height: 450px;
   padding: 20px;
     margin: 30px;

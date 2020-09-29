@@ -37,35 +37,38 @@ const Wrapper = styled.div`
   margin-top: 80px;
   text-align: center;
 
-  p{
-
+  p {
     width: 80%;
 
-  @media ${device.desktop}{
-    width: 100%;
+    @media ${device.desktop} {
+      width: 100%;
+    }
   }
-}
 `;
 
 const IconContainer = styled.div`
   height: 200px;
+  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: 50px;
+  justify-content: space-around;
 
+  @media ${device.desktop} {
+    justify-content: center;
+  }
   i {
     color: papayawhip;
     padding: 30px 30px;
+    font-size: 50px;
 
     &:hover {
       text-decoration: none;
     }
 
     p {
-      font-size: 20px;
+      font-size: 15px;
       font-family: "Raleway";
-      padding-top: 20px;
+      padding-top: 40px;
     }
 
     @media ${device.desktop} {
