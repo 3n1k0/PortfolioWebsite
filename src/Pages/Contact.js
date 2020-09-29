@@ -1,6 +1,6 @@
 import React from "react";
 import SectionContainer from "../SectionContainer";
-import { fonts } from '../config'
+import { fonts } from "../config";
 import styled from "styled-components/macro";
 
 export const Button = styled.button`
@@ -17,7 +17,6 @@ export const Button = styled.button`
   margin-bottom: 40px;
   text-align: center;
 
-
   &:hover {
     background-color: rgba(0, 0, 0, 0.7);
     cursor: pointer;
@@ -25,7 +24,7 @@ export const Button = styled.button`
 
   i {
     padding-left: 20px;
-    }
+  }
 `;
 
 const Container = styled.div`
@@ -103,20 +102,23 @@ class Contact extends React.Component {
             <form action="https://formspree.io/mknqqvoz" method="POST">
               <h1>Contact</h1>
               <fieldset>
-                <label for="name">Name </label>
                 <input type="text" name="name" required />
+                <label for="name">Name </label>
 
                 <br />
-                <label for="email">Email</label>
+
                 <input type="email" name="_replyto" required />
+                <label for="email">Email</label>
 
                 <br />
-                <label for="subject">Subject</label>
+
                 <input type="text" name="subject" />
+                <label for="subject">Subject</label>
 
                 <br />
-                <label for="message">Message</label>
+
                 <textarea name="message" required></textarea>
+                <label for="message">Message</label>
               </fieldset>
               <Button type="submit">Send</Button>
             </form>

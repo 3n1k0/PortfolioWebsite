@@ -89,16 +89,27 @@ class Footer extends React.Component {
         </p>
 
         <IconContainer>
-          <InsideWrapper a href="mailto:eniko.kosztolanyi@gmail.com">
-            <i class="far fa-envelope"></i>
+          <InsideWrapper
+            a
+            aria-label="Click here to send me an email"
+            href="mailto:eniko.kosztolanyi@gmail.com"
+            rel="noreferrer noopener"
+          >
+            <i class="far fa-envelope" aria-hidden="true"></i>
           </InsideWrapper>
 
-          <InsideWrapper>
-            <i class="fas fa-mobile-alt"></i>
+          <InsideWrapper
+            rel="noreferrer noopener"
+            aria-label="Reach me via phone"
+          >
+            <i class="fas fa-mobile-alt" aria-hidden="true"></i>
             <Text>+31647880400</Text>
           </InsideWrapper>
 
-          <InsideWrapper>
+          <InsideWrapper
+            rel="noreferrer noopener"
+            aria-label="I am based in Amsterdam."
+          >
             <i class="fas fa-map-marked"></i>
             <Text>Amsterdam, Netherlands</Text>
           </InsideWrapper>

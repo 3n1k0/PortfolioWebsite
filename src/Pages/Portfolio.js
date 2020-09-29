@@ -67,7 +67,7 @@ const Tools = styled.div`
   margin: 20px;
   text-decoration: none;
 
-  h1{
+  h1 {
     padding: 20px;
     text-align: center;
   }
@@ -104,7 +104,7 @@ const IconContainer = styled.div`
 `;
 
 const PortfolioContainer = styled.div`
-  width: 90%;
+  width: 100%;
   min-height: 100vh;
   display: flex;
   flex-flow: column wrap;
@@ -125,7 +125,7 @@ const PortfolioContainer = styled.div`
 const Projects = styled.div`
   display: grid;
 
-  h4 {
+  h3 {
     font-size: 20px;
     font-weight: 400;
     line-height: 1.5;
@@ -159,7 +159,7 @@ const Card = styled.div`
   width: 430px;
   height: 450px;
   padding: 20px;
-    margin: 30px;
+  margin: 30px;
 
   &:hover {
     transform: scale(1.05);
@@ -214,7 +214,7 @@ class Portfolio extends React.Component {
             <div class="container">
               <Card>
                 <CardBody>
-                  <h4 class="card-title">Responsive photography website </h4>
+                  <h3 class="card-title">Responsive photography website </h3>
                   <CardImage
                     alt="Project2"
                     src={
@@ -240,7 +240,7 @@ class Portfolio extends React.Component {
             <div class="container">
               <Card>
                 <CardBody>
-                  <h4 class="card-title">Responsive photography website </h4>
+                  <h3 class="card-title">Responsive photography website </h3>
                   <CardImage
                     alt="Project2"
                     src={
@@ -269,7 +269,7 @@ class Portfolio extends React.Component {
             <div class="container">
               <Card>
                 <CardBody>
-                  <h4 class="card-title">Responsive photography website </h4>
+                  <h3 class="card-title">Responsive photography website </h3>
                   <CardImage
                     alt="Project2"
                     src={
