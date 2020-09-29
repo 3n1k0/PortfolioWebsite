@@ -9,14 +9,14 @@ const PortfolioButton = styled.a`
   border: none;
   outline: none;
   border-radius: 6px;
-  color: #fff;
+  color: papayawhip;
   font-size: 16px;
   text-shadow: 0 1px rgba(0, 0, 0, 0.4);
   background-color: rgba(0, 0, 0, 0.4);
   font-family: "Raleway";
   cursor: pointer;
   color: papayawhip;
-  background-color: #007bff;
+  background-color: #1863c4;
   display: flex;
   align-items: center;
   justify-content: center;

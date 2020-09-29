@@ -102,23 +102,28 @@ class Contact extends React.Component {
             <form action="https://formspree.io/mknqqvoz" method="POST">
               <h1>Contact</h1>
               <fieldset>
-                <input type="text" name="name" required />
-                <label for="name">Name </label>
+                <label for="name">
+                  Name
+                  <input type="text" name="name" required />
+                </label>
 
                 <br />
-
-                <input type="email" name="_replyto" required />
-                <label for="email">Email</label>
-
-                <br />
-
-                <input type="text" name="subject" />
-                <label for="subject">Subject</label>
+                <label for="email">
+                  Email
+                  <input type="email" name="_replyto" required />
+                </label>
 
                 <br />
+                <label for="subject">
+                  Subject
+                  <input type="text" name="subject" />
+                </label>
 
-                <textarea name="message" required></textarea>
-                <label for="message">Message</label>
+                <br />
+                <label for="message">
+                  Message
+                  <textarea name="message" required></textarea>
+                </label>
               </fieldset>
               <Button type="submit">Send</Button>
             </form>
