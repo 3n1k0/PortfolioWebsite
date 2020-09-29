@@ -38,19 +38,17 @@ const HomeContainer = styled.div`
   min-height: 100vh;
   display: flex;
   flex-flow: column nowrap;
-  align-items: center; 
+  align-items: center;
   justify-content: center;
 `;
 
 const Hello = styled.div`
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  height: 100vh;
-  text-align: center;
-  font-size: 50px;
+  display: grid;
+  justify-items: center;
+
+  span {
+    display: none;
+  }
 
   h2 {
     font-weight: 400;
@@ -67,13 +65,25 @@ const Hello = styled.div`
     font-size: 50px;
   }
 
+
+  @media ${(device.desktop, device.tablet)} {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    font-size: 50px;
+  }
+
   i {
-    fill: papayawhip;
-    font-size: 38px;
     -moz-animation: bounce 1s infinite linear;
     -o-animation: bounce 1s infinite linear;
     -webkit-animation: bounce 1s infinite linear;
     animation: bounce 1s infinite linear;
+    fill: papayawhip;
+    font-size: 38px;
     position: relative;
     padding-top: 100px;
   }
@@ -95,33 +105,35 @@ const Home = () => {
           <Hello>
             <h2>Hello, I'm Enikő!</h2>
             <p>[ ˈɛnikøː]</p>
-            <Typewriter
-              options={{
-                autoStart: true,
-                loop: true,
-                deleteSpeed: 21,
-                delay: 80,
-              }}
-              onInit={(typewriter) => {
-                typewriter
-                  .start()
-                  .typeString("I'm a <b>FrontEnd Developer</b>")
+            <span>
+              <Typewriter
+                options={{
+                  autoStart: true,
+                  loop: true,
+                  deleteSpeed: 21,
+                  delay: 80,
+                }}
+                onInit={(typewriter) => {
+                  typewriter
+                    .start()
+                    .typeString("I'm a <b>FrontEnd Developer</b>")
 
-                  .pauseFor(1000)
-                  .deleteChars(18)
-                  .pauseFor(500)
-                  .typeString("<b>Problem Solver</b>")
-                  .pauseFor(500)
-                  .deleteChars(14)
-                  .pauseFor(500)
-                  .typeString("<b>Creative</b>")
-                  .pauseFor(500)
-                  .deleteChars(8)
-                  .pauseFor(500)
-                  .typeString("<b>Fast Learner</b>")
-                  .pauseFor(500);
-              }}
-            />
+                    .pauseFor(1000)
+                    .deleteChars(18)
+                    .pauseFor(500)
+                    .typeString("<b>Problem Solver</b>")
+                    .pauseFor(500)
+                    .deleteChars(14)
+                    .pauseFor(500)
+                    .typeString("<b>Creative</b>")
+                    .pauseFor(500)
+                    .deleteChars(8)
+                    .pauseFor(500)
+                    .typeString("<b>Fast Learner</b>")
+                    .pauseFor(500);
+                }}
+              />
+            </span>
             <i class="fas fa-angle-double-down"></i>
           </Hello>
         </HomeContainer>

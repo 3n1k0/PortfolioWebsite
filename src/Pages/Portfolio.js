@@ -59,12 +59,18 @@ const Tools = styled.div`
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
+  justify-content: center;
   background: rgba(0, 0, 3, 0.2);
   border-radius: 6px;
   height: 100%;
   padding: 20px;
   margin: 20px;
   text-decoration: none;
+
+  h1{
+    padding: 20px;
+    text-align: center;
+  }
 
   @media ${device.desktop} {
     width: 60%;
@@ -81,7 +87,7 @@ const IconContainer = styled.div`
 
   i {
     padding: 30px;
-    font-size: 80px;
+    font-size: 67px;
 
     @media ${device.desktop} {
       padding: 20px;
