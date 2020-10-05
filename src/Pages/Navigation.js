@@ -1,10 +1,10 @@
 import React, { useState } from "react";
+import HamburgerMenu from "../Hamburgermenu";
 import styled from "styled-components/macro";
 import { device } from "../mediaquery";
 
-
 const Navbar = styled.nav`
-  /* width: 50%;
+  width: 50%;
   height: 100%;
   background-color: black;
   color: white;
@@ -12,9 +12,11 @@ const Navbar = styled.nav`
   right: 0;
   align-items: center;
   top: 0;
-  z-index: 1;
   background: rgba(0, 0, 0, 0.9);
-  transform: translateX(100%);
+
+  display: ${({ isOpen }) => {
+    return isOpen ? "flex" : "none";
+  }};
 
   ul {
     display: grid;
@@ -38,9 +40,9 @@ const Navbar = styled.nav`
     &:hover {
       text-shadow: 1px 1px;
     }
-  } */
+  }
 
-  /* @media ${device.desktop} { */
+  @media ${device.desktop} {
     width: 100%;
     height: 50px;
     background-color: black;
@@ -50,6 +52,8 @@ const Navbar = styled.nav`
     top: 0;
     z-index: 1;
     background: rgba(0, 0, 0, 0.8);
+    opacity: 1;
+    display: flex;
 
     ul {
       display: flex;
@@ -80,7 +84,7 @@ const Navbar = styled.nav`
         }
       }
     }
-  /* } */
+  }
 `;
 
 const Navitem = ({ href, navitemname }) => {
@@ -103,22 +107,27 @@ const Navitem = ({ href, navitemname }) => {
   );
 };
 
+const Navigation = () => {
+  const [isOpen, setisOpen] = useState(false);
 
-class Navigation extends React.Component {
-  render() {
-    return (
-      <>
-        <Navbar>
-          <ul>
-            <Navitem href="#home" navitemname="Home" />
-            <Navitem href="#about" navitemname="About" />
-            <Navitem href="#portfolio" navitemname="Portfolio" />
-            <Navitem href="#contact" navitemname="Contact" />
-          </ul>
-        </Navbar>
-      </>
-    );
-  }
-}
+  return (
+    <>
+      <Navbar isOpen={isOpen}>
+        <ul>
+          <Navitem href="#home" navitemname="Home" />
+          <Navitem href="#about" navitemname="About" />
+          <Navitem href="#portfolio" navitemname="Portfolio" />
+          <Navitem href="#contact" navitemname="Contact" />
+        </ul>
+      </Navbar>
+      <HamburgerMenu
+        onClick={() => {
+          setisOpen(!isOpen);
+        }}
+        isOpen={isOpen}
+      />
+    </>
+  );
+};
 
 export default Navigation;

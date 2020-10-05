@@ -65,7 +65,6 @@ const Hello = styled.div`
     font-size: 50px;
   }
 
-
   @media ${(device.desktop, device.tablet)} {
     display: flex;
     flex-flow: column;
@@ -96,7 +95,6 @@ const Home = () => {
   return (
     <MainContainer ref={mainContainerRef}>
       <GlobalStyle />
-      <Navigation />
 
       <SectionContainer>
         <a name="home"></a>
@@ -164,6 +162,7 @@ const Home = () => {
       </UpArrowWrapper>
 
       <Footer />
+      <Navigation />
     </MainContainer>
   );
 };
