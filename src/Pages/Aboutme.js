@@ -97,15 +97,10 @@ class About extends React.Component {
               </Button>
             </TextBox>
           </Description>
-          <Wrapper>
-            <img
-              data-aos="fade-down"
-              alt="Eniko Kosztolanyi"
-              src={
-                "https://ucarecdn.com/4d78fa47-41cd-4dfa-97e5-79ce16fc0070/-/preview/-/format/webp/"
-              }
-              loading="lazy"
-            ></img>
+          <Wrapper data-aos="fade-down">
+            <picture>
+              <img src="//ucarecdn.com/4d78fa47-41cd-4dfa-97e5-79ce16fc0070/-/format/auto/" />
+            </picture>
           </Wrapper>
         </AboutContainer>
       </SectionContainer>
