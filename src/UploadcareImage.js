@@ -8,7 +8,7 @@ const StyledImage = styled.img`
   height: width;
   filter: brightness(90%);
   max-width: 250px;
-  max-height: 300px;
+  max-height: 250px;
 
   @media ${device.desktop} {
     padding-bottom: 20px;

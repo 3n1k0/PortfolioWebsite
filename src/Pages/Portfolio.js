@@ -144,6 +144,7 @@ const CardBody = styled.div`
 const CardText = styled.p`
   text-align: center;
   width: 100%;
+  padding-bottom: 10px;
 `;
 
 class Portfolio extends React.Component {
@@ -159,19 +160,25 @@ class Portfolio extends React.Component {
               <Card>
                 <CardBody>
                   <h3 class="card-title">Responsive photography website </h3>
-                  <UploadcareImage uuid="67aa2ecc-c09c-4aaa-aca7-0b2090ebe3e0" />
+                  <UploadcareImage uuid="0df2c7b6-a815-4c86-a70b-c768a865626f" />
                 </CardBody>
                 <CardText>
-                  A single page website built to showcase responsive web
-                  development and mobile design skills. Optimized SEO.
+                  A single page website built showcasing professional
+                  photography portfolio and responsive web development combined
+                  with mobile design skills. Optimized SEO.
                   <br />
                   <br />
                   Skillset:
                   <br />
-                  HTML&nbsp;&nbsp;|&nbsp;&nbsp; CSS - Media Queries
-                  &nbsp;&nbsp;| React&nbsp;&nbsp; | &nbsp;&nbsp; VSCode
+                  &nbsp;&nbsp;HTML&nbsp;&nbsp;| &nbsp;&nbsp;CSS - Media Queries
+                  &nbsp;&nbsp;|&nbsp;&nbsp; React&nbsp;&nbsp;|&nbsp;&nbsp;
+                  VSCode&nbsp;&nbsp;
                 </CardText>
-                <PortfolioButton href="https://anniekostolany.com">
+                <PortfolioButton
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  href="https://anniekostolany.com"
+                >
                   <p>Visit website</p>
                 </PortfolioButton>
               </Card>
@@ -181,21 +188,26 @@ class Portfolio extends React.Component {
               <Card>
                 <CardBody>
                   <h3 class="card-title">COVID-19 Information Website </h3>
-                  <UploadcareImage uuid="6e552d8d-3b2c-41a9-a601-e95fcc00aaf7" />
-                  <p class="card-text">
-                    A single page website built to apply Responsive Web Design
-                    skills alongside with API integration.
-                  </p>
+                  <UploadcareImage uuid="f72095fc-953d-478d-bd03-578ad3dded09" />
+                </CardBody>
+                <CardText>
+                  A single page website built to apply Responsive Web Design
+                  skills alongside with API integration.
+                  <br />
+                  <br />
                   Skillset:
                   <br />
-                  HTML&nbsp;&nbsp;|&nbsp;&nbsp; CSS | API Integration
-                  &nbsp;&nbsp;| React&nbsp;&nbsp; | RESTful services
-                  <PortfolioButton href="https://github.com/3n1k0/Covid19-information">
-                    <p>
-                      See on GitHub <i class="fab fa-github"></i>
-                    </p>
-                  </PortfolioButton>
-                </CardBody>
+                  RESTful API&nbsp;&nbsp;| &nbsp;&nbsp;HTML &nbsp;&nbsp;|
+                  &nbsp;&nbsp;CSS - Media Queries&nbsp;&nbsp;|
+                  &nbsp;&nbsp;React&nbsp;&nbsp;
+                </CardText>
+                <PortfolioButton
+                  target="_blank"
+                  rel="noreferrer noopener"
+                  href="https://5f7e216a97b0fa0dc8f4f09a--project-covid-19-2020.netlify.app/"
+                >
+                  <p>Visit website</p>
+                </PortfolioButton>
               </Card>
             </div>
 
@@ -210,10 +222,15 @@ class Portfolio extends React.Component {
                     <br />
                     Technologies and tools used:
                     <br />
-                    HTML | JavaScript | VSCode
+                    HTML&nbsp;&nbsp; |&nbsp;&nbsp; JavaScript&nbsp;&nbsp;
+                    |&nbsp;&nbsp; VSCode
                   </p>
 
-                  <PortfolioButton href="https://github.com/3n1k0/Color-Guessing-Game">
+                  <PortfolioButton
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    href="https://github.com/3n1k0/Color-Guessing-Game"
+                  >
                     <p>
                       See on GitHub <i class="fab fa-github"></i>
                     </p>
@@ -232,10 +249,15 @@ class Portfolio extends React.Component {
                     <br />
                     Technologies and tools used:
                     <br />
-                    HTML | SASS | JavaScript | VSCode
+                    HTML&nbsp;&nbsp; | &nbsp;&nbsp;SASS&nbsp;&nbsp;
+                    |&nbsp;&nbsp; JavaScript &nbsp;&nbsp;| &nbsp;&nbsp;VSCode
                   </p>
 
-                  <PortfolioButton href="https://github.com/3n1k0/The-Cat-Memory-Game">
+                  <PortfolioButton
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    href="https://github.com/3n1k0/The-Cat-Memory-Game"
+                  >
                     <p>
                       See on GitHub <i class="fab fa-github"></i>
                     </p>
