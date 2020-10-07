@@ -29,6 +29,10 @@ const Wrapper = styled.div`
           }
         `
       : ""}
+
+  @media ${device.desktop} {
+    opacity: 0;
+  }
 `;
 
 const Stripe = styled.div`
@@ -42,8 +46,6 @@ class Hamburgermenu extends Component {
     return (
       <Wrapper
         onClick={() => {
-          console.log("ide");
-
           this.props.onClick();
         }}
         isOpen={this.props.isOpen}

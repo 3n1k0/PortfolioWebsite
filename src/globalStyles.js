@@ -7,14 +7,16 @@ const GlobalStyle = createGlobalStyle`
     height: 100%;
     background: white;
     color: papayawhip;
-    background: rgb(59,0,105);
+        background: rgb(59,0,105);
 background: radial-gradient(circle, rgba(59,0,105,0.7553396358543417) 27%, rgba(47,69,184,1) 90%);
+
   }
 
   *{
     box-sizing: border-box;
     font-family: "Raleway";
     text-decoration: none;
+    
   }
 
 

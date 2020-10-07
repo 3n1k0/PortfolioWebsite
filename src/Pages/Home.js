@@ -90,10 +90,11 @@ const Hello = styled.div`
 
 const Home = () => {
   const mainContainerRef = useRef(null);
-  const scrollPercentage = useScrollPosition({ elementRef: mainContainerRef });
+  const scrollPercentage = useScrollPosition();
 
   return (
-    <MainContainer ref={mainContainerRef}>
+    // <MainContainer ref={mainContainerRef}>
+    <>
       <GlobalStyle />
 
       <SectionContainer>
@@ -163,7 +164,7 @@ const Home = () => {
 
       <Footer />
       <Navigation />
-    </MainContainer>
+    </>
   );
 };
 

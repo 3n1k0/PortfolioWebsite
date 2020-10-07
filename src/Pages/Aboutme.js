@@ -17,7 +17,7 @@ const AboutContainer = styled.div`
     grid-template-columns: 3fr 1fr;
     height: 60vh;
   }
-    @media ${device.tablet} {
+  @media ${device.tablet} {
     display: grid;
     grid-template-columns: 2fr 1fr;
     max-height: 60vh;
@@ -29,9 +29,7 @@ const Description = styled.div`
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  text-align: center
-
-  h1 {
+  text-align: center h1 {
     color: black;
   }
 `;
@@ -44,7 +42,7 @@ const TextBox = styled.div`
   font-size: 19px;
   line-height: 1.5;
 
-  @media ${device.desktop}{
+  @media ${device.desktop} {
     width: 80%;
   }
 `;
@@ -90,7 +88,11 @@ class About extends React.Component {
               constantly learning new technologies and methodologies in order to
               help businesses grow.
               <br /> <br />
-              <Button style={{marginTop:"30px"}} a href="http://eniko.dev/assets/eniko-kosztolanyi-CV.pdf">
+              <Button
+                style={{ marginTop: "30px" }}
+                a
+                href="http://eniko.dev/assets/eniko-kosztolanyi-CV.pdf"
+              >
                 Download my CV<i class="fas fa-download"></i>
               </Button>
             </TextBox>
