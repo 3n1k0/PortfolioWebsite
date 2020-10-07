@@ -31,7 +31,7 @@ const Wrap = styled.div`
 `;
 
 const Tools = styled.div`
-  width: 90%;
+  width: 85%;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
@@ -83,8 +83,8 @@ class ToolsandSkills extends React.Component {
   render() {
     return (
       <>
-        <Tools data-aos="fade-down-right">
-          <h1>Tools and Technologies</h1>
+        <Tools>
+          <h1 data-aos="fade-right">Tools and Technologies</h1>
           <IconContainer>
             <Wrap>
               <i class="fab fa-html5"></i>
@@ -135,8 +135,8 @@ class ToolsandSkills extends React.Component {
           </IconContainer>
         </Tools>
 
-        <ServiceWrapper data-aos="fade-down-left">
-          <h1>Services</h1>
+        <ServiceWrapper>
+          <h1 data-aos="fade-right">Services</h1>
           <IconContainer>
             <Wrap>
               <i class="fas fa-laptop-code"></i>

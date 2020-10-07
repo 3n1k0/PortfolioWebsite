@@ -35,7 +35,6 @@ const Container = styled.div`
   form {
     max-width: 460px;
     margin: 0 auto;
-    /* padding: 10px 20px 30px 20px; */
     background-color: transparent;
     border-radius: 8px;
     position: relative;

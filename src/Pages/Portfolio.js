@@ -28,41 +28,6 @@ const PortfolioButton = styled.a`
   }
 `;
 
-const Wrap = styled.div`
-  display: flex;
-  flex-flow: column wrap;
-  margin: 5px;
-  align-items: center;
-  justify-content: center;
-
-  @media ${device.desktop} {
-    margin: 30px;
-  }
-`;
-
-const Tools = styled.div`
-  width: 90%;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  justify-content: center;
-  background: rgba(0, 0, 3, 0.2);
-  border-radius: 6px;
-  height: 100%;
-  padding: 20px;
-  margin: 20px;
-  text-decoration: none;
-
-  h1 {
-    padding: 20px;
-    text-align: center;
-  }
-
-  @media ${device.desktop} {
-    width: 60%;
-  }
-`;
-
 const PortfolioContainer = styled.div`
   width: 100%;
   min-height: 100vh;
@@ -84,6 +49,7 @@ const PortfolioContainer = styled.div`
 
 const Projects = styled.div`
   display: grid;
+  width: 100%;
 
   h3 {
     font-size: 20px;
@@ -116,7 +82,7 @@ const Card = styled.div`
 
   text-align: center;
   color: papayawhip;
-  width: 430px;
+  width: 85%;
   height: 450px;
   padding: 20px;
   margin: 30px;
