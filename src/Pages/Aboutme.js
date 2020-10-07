@@ -74,10 +74,10 @@ class About extends React.Component {
     return (
       <SectionContainer>
         <a name="about"></a>
-        <h2>About me</h2>
+        <h2 data-aos="fade-right">About me</h2>
         <AboutContainer>
           <Description>
-            <TextBox>
+            <TextBox data-aos="fade-up">
               My name is Eniko and I am a Web Developer based in Amsterdam. My
               passion is to create dynamic and intuitive user experience. I love
               new technologies and always invested in bringing unique ideas into
@@ -99,6 +99,7 @@ class About extends React.Component {
           </Description>
           <Wrapper>
             <img
+              data-aos="fade-down"
               alt="Eniko Kosztolanyi"
               src={
                 "https://ucarecdn.com/4d78fa47-41cd-4dfa-97e5-79ce16fc0070/-/preview/-/format/webp/"

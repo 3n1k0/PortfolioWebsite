@@ -208,9 +208,9 @@ class Portfolio extends React.Component {
       <SectionContainer>
         <a name="portfolio"></a>
         <PortfolioContainer>
-          <h2>Featured projects</h2>
+          <h2 data-aos="fade-right">Featured projects</h2>
 
-          <Projects>
+          <Projects data-aos="zoom-in-down">
             <div class="container">
               <Card>
                 <CardBody>
@@ -323,7 +323,7 @@ class Portfolio extends React.Component {
               </Card>
             </div>
           </Projects>
-          <Tools>
+          <Tools data-aos="fade-down-right">
             <h1>Tools and Technologies</h1>
             <IconContainer>
               <Wrap>
@@ -375,7 +375,7 @@ class Portfolio extends React.Component {
             </IconContainer>
           </Tools>
 
-          <ServiceWrapper>
+          <ServiceWrapper data-aos="fade-down-left">
             <h1>Services</h1>
             <IconContainer>
               <Wrap>

@@ -23,15 +23,6 @@ const UpArrowWrapper = styled.div`
   font-size: 50px;
   cursor: pointer;
 `;
-
-const MainContainer = styled.div`
-  width: 100%;
-  height: 100vh;
-  overflow-y: scroll;
-  scroll-behavior: smooth;
-  scroll-snap-type: y mandatory;
-`;
-
 const HomeContainer = styled.div`
   width: 100%;
   padding-top: 50px;
@@ -93,7 +84,6 @@ const Home = () => {
   const scrollPercentage = useScrollPosition();
 
   return (
-    // <MainContainer ref={mainContainerRef}>
     <>
       <GlobalStyle />
 
