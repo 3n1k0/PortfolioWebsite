@@ -43,7 +43,7 @@ const TextBox = styled.div`
   line-height: 1.5;
 
   @media ${device.desktop} {
-    width: 80%;
+    width: 78%;
   }
 `;
 

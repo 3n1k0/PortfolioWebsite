@@ -64,9 +64,10 @@ const IconContainer = styled.div`
 
   i {
     padding: 30px;
-    font-size: 67px;
+    font-size: 45px;
 
-    @media ${device.desktop} {
+    @media ${(device.desktop, device.tablet)} {
+      font-size: 67px;
       padding: 20px;
     }
   }
