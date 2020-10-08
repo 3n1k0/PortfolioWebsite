@@ -4,9 +4,9 @@ import { device } from "./mediaquery";
 
 const SectionContainer = styled.div`
   width: 100%;
-  min-height: 80vh;
   background: ${({ color }) => color};
   position: relative;
+  height: 100%;
 
   h2 {
     font-size: 50px;
@@ -23,9 +23,7 @@ const SectionContainer = styled.div`
 
   @media ${device.desktop} {
     width: 100%;
-    min-height: 80vh;
     background: ${({ color }) => color};
-    //scroll-snap-align: start;
     position: relative;
   }
 `;

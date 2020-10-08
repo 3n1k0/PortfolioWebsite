@@ -62,6 +62,7 @@ const Navbar = styled.nav`
     background: rgba(0, 0, 0, 0.8);
     opacity: 1;
     display: flex;
+    overflow: hidden;
 
     ul {
       display: flex;

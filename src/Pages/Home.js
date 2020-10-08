@@ -9,28 +9,19 @@ import About from "./Aboutme";
 import Portfolio from "./Portfolio";
 import Contact from "./Contact";
 import SectionContainer from "../SectionContainer";
-import useScrollPosition from "../useScrollPosition";
 import { fonts } from "../config";
 import Footer from "./Footer";
 import { BounceArrow } from "../BounceArrow.css";
+import { UpArrowWrapper } from "../UpArrow";
 
-const UpArrowWrapper = styled.div`
-  width: 50px;
-  height: 50px;
-  position: fixed;
-  bottom: 70px;
-  right: 30px;
-  font-size: 50px;
-  cursor: pointer;
-`;
 const HomeContainer = styled.div`
   width: 100%;
   padding-top: 50px;
-  min-height: 100vh;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
+  overflow: hidden;
 `;
 
 const Hello = styled.div`
@@ -80,16 +71,13 @@ const Hello = styled.div`
 `;
 
 const Home = () => {
-  const mainContainerRef = useRef(null);
-  const scrollPercentage = useScrollPosition();
-
   return (
     <>
       <GlobalStyle />
 
       <SectionContainer>
         <a name="home"></a>
-        <Progress progress={scrollPercentage + "%"} />
+        <Progress />
         <HomeContainer>
           <Hello>
             <h2>Hello, I'm Enikő!</h2>
@@ -140,7 +128,7 @@ const Home = () => {
         <Contact />
       </SectionContainer>
 
-      <UpArrowWrapper style={{ opacity: scrollPercentage / 10 }}>
+      <UpArrowWrapper>
         <i
           onClick={() => {
             window.scrollTo({

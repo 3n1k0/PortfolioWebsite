@@ -6,11 +6,11 @@ import { device } from "../mediaquery";
 
 const AboutContainer = styled.div`
   width: 100%;
-  max-height: 140vh;
   display: grid;
   grid-template-rows: 1fr 1fr 1fr;
   justify-items: center;
   align-items: center;
+  overflow: hidden;
 
   @media ${device.desktop} {
     display: grid;

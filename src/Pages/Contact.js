@@ -31,6 +31,7 @@ const Container = styled.div`
   min-height: 1200px;
   width: 100%;
   color: black;
+  overflow: hidden;
 
   form {
     max-width: 460px;

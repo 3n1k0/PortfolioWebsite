@@ -12,6 +12,7 @@ const ServiceWrapper = styled.div`
   padding: 40px;
   margin: 40px;
   text-decoration: none;
+  overflow: hidden;
 
   @media ${device.desktop} {
     width: 60%;

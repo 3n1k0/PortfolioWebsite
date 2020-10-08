@@ -5,6 +5,25 @@ import { device } from "../mediaquery";
 import UploadcareImage from "../UploadcareImage";
 import ToolsandSkills from "./Tools";
 
+const PortfolioContainer = styled.div`
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+  ul {
+    list-style: none;
+    color: papayawhip;
+    text-align: center;
+    font-size: 19px;
+    line-height: 27px;
+    letter-spacing: -0.56px;
+    font-style: normal;
+  }
+`;
+
 const PortfolioButton = styled.a`
   width: 150px;
   height: 44px;
@@ -25,25 +44,6 @@ const PortfolioButton = styled.a`
 
   p {
     font-family: "Raleway";
-  }
-`;
-
-const PortfolioContainer = styled.div`
-  width: 100%;
-  min-height: 100vh;
-  display: flex;
-  flex-flow: column wrap;
-  align-items: center;
-  justify-content: center;
-
-  ul {
-    list-style: none;
-    color: papayawhip;
-    text-align: center;
-    font-size: 19px;
-    line-height: 27px;
-    letter-spacing: -0.56px;
-    font-style: normal;
   }
 `;
 
