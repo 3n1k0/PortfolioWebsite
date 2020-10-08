@@ -4,7 +4,7 @@ import { device } from "./mediaquery";
 
 const Wrapper = styled.div`
   display: grid;
-  position: absolute;
+  position: fixed;
   top: 30px;
   right: 30px;
   width: 50px;
@@ -19,6 +19,7 @@ const Wrapper = styled.div`
           div:nth-child(1) {
             transform: rotate(45deg);
             position: absolute;
+            top: 30px;
           }
           div:nth-child(2) {
             display: none;
@@ -26,6 +27,7 @@ const Wrapper = styled.div`
           div:nth-child(3) {
             transform: rotate(-45deg);
             position: absolute;
+            top: 30px;
           }
         `
       : ""}

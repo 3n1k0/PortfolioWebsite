@@ -49,7 +49,9 @@ const PortfolioContainer = styled.div`
 
 const Projects = styled.div`
   display: grid;
-  width: 100%;
+  align-content: center;
+  justify-items: center;
+  width: 80%;
 
   h3 {
     font-size: 20px;
@@ -60,8 +62,7 @@ const Projects = styled.div`
     opacity: 0.8;
   }
 
-  @media ${device.desktop} {
-    display: grid;
+  @media ${(device.desktop, device.tablet)} {
     grid-template-columns: 1fr 1fr;
   }
 `;
@@ -73,17 +74,15 @@ const Card = styled.div`
   transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12),
     0.3s box-shadow,
     0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
-
   cursor: pointer;
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
-
   text-align: center;
   color: papayawhip;
   width: 85%;
-  height: 450px;
+
   padding: 20px;
   margin: 30px;
 
@@ -95,8 +94,7 @@ const Card = styled.div`
   @media ${device.desktop} {
     padding: 40px;
     margin: 50px;
-    width: 550px;
-    height: 550px;
+    max-width: 500px;
   }
 `;
 
@@ -122,115 +120,106 @@ class Portfolio extends React.Component {
           <h2 data-aos="fade-right">Featured projects</h2>
 
           <Projects data-aos="zoom-in-down">
-            <div class="container">
-              <Card>
-                <CardBody>
-                  <h3 class="card-title">Responsive photography website </h3>
-                  <UploadcareImage uuid="0df2c7b6-a815-4c86-a70b-c768a865626f" />
-                </CardBody>
-                <CardText>
-                  A single page website built showcasing professional
-                  photography portfolio and responsive web development combined
-                  with mobile design skills. Optimized SEO.
+            <Card>
+              <CardBody>
+                <h3 class="card-title">Responsive photography website </h3>
+                <UploadcareImage uuid="0df2c7b6-a815-4c86-a70b-c768a865626f" />
+              </CardBody>
+              <CardText>
+                A single page website built showcasing professional photography
+                portfolio and responsive web development combined with mobile
+                design skills. Optimized SEO.
+                <br />
+                <br />
+                Skillset:
+                <br />
+                &nbsp;&nbsp;HTML&nbsp;&nbsp;| &nbsp;&nbsp;CSS - Media Queries
+                &nbsp;&nbsp;|&nbsp;&nbsp; React&nbsp;&nbsp;|&nbsp;&nbsp;
+                VSCode&nbsp;&nbsp;
+              </CardText>
+              <PortfolioButton
+                target="_blank"
+                rel="noreferrer noopener"
+                href="https://anniekostolany.com"
+              >
+                <p>Visit website</p>
+              </PortfolioButton>
+            </Card>
+
+            <Card>
+              <CardBody>
+                <h3 class="card-title">COVID-19 Information Website </h3>
+                <UploadcareImage uuid="f72095fc-953d-478d-bd03-578ad3dded09" />
+              </CardBody>
+              <CardText>
+                A single page website built to apply Responsive Web Design
+                skills alongside with API integration.
+                <br />
+                <br />
+                Skillset:
+                <br />
+                RESTful API&nbsp;&nbsp;| &nbsp;&nbsp;HTML &nbsp;&nbsp;|
+                &nbsp;&nbsp;CSS - Media Queries&nbsp;&nbsp;|
+                &nbsp;&nbsp;React&nbsp;&nbsp;
+              </CardText>
+              <PortfolioButton
+                target="_blank"
+                rel="noreferrer noopener"
+                href="https://5f7e216a97b0fa0dc8f4f09a--project-covid-19-2020.netlify.app/"
+              >
+                <p>Visit website</p>
+              </PortfolioButton>
+            </Card>
+
+            <Card>
+              <CardBody>
+                <h3 class="card-title">RGB Colorgame </h3>
+                <UploadcareImage uuid="b7b481db-dae3-4c48-9b52-48308b077342" />
+
+                <p class="card-text">
+                  A simple game to teach about the RGB color model.
                   <br />
+                  Technologies and tools used:
                   <br />
-                  Skillset:
-                  <br />
-                  &nbsp;&nbsp;HTML&nbsp;&nbsp;| &nbsp;&nbsp;CSS - Media Queries
-                  &nbsp;&nbsp;|&nbsp;&nbsp; React&nbsp;&nbsp;|&nbsp;&nbsp;
-                  VSCode&nbsp;&nbsp;
-                </CardText>
+                  HTML&nbsp;&nbsp; |&nbsp;&nbsp; JavaScript&nbsp;&nbsp;
+                  |&nbsp;&nbsp; VSCode
+                </p>
                 <PortfolioButton
                   target="_blank"
                   rel="noreferrer noopener"
-                  href="https://anniekostolany.com"
+                  href="https://github.com/3n1k0/Color-Guessing-Game"
                 >
-                  <p>Visit website</p>
+                  <p>
+                    See on GitHub <i class="fab fa-github"></i>
+                  </p>
                 </PortfolioButton>
-              </Card>
-            </div>
+              </CardBody>
+            </Card>
 
-            <div class="container">
-              <Card>
-                <CardBody>
-                  <h3 class="card-title">COVID-19 Information Website </h3>
-                  <UploadcareImage uuid="f72095fc-953d-478d-bd03-578ad3dded09" />
-                </CardBody>
-                <CardText>
-                  A single page website built to apply Responsive Web Design
-                  skills alongside with API integration.
+            <Card>
+              <CardBody>
+                <h3 class="card-title">Cat Memory Game </h3>
+                <UploadcareImage uuid="66d89e57-f70f-4bd1-bc4a-75446629affb" />
+                <p class="card-text">
+                  A JavaScript game.
                   <br />
+                  Technologies and tools used:
                   <br />
-                  Skillset:
-                  <br />
-                  RESTful API&nbsp;&nbsp;| &nbsp;&nbsp;HTML &nbsp;&nbsp;|
-                  &nbsp;&nbsp;CSS - Media Queries&nbsp;&nbsp;|
-                  &nbsp;&nbsp;React&nbsp;&nbsp;
-                </CardText>
+                  HTML&nbsp;&nbsp; | &nbsp;&nbsp;SASS&nbsp;&nbsp; |&nbsp;&nbsp;
+                  JavaScript &nbsp;&nbsp;| &nbsp;&nbsp;VSCode
+                </p>
+
                 <PortfolioButton
                   target="_blank"
                   rel="noreferrer noopener"
-                  href="https://5f7e216a97b0fa0dc8f4f09a--project-covid-19-2020.netlify.app/"
+                  href="https://github.com/3n1k0/The-Cat-Memory-Game"
                 >
-                  <p>Visit website</p>
+                  <p>
+                    See on GitHub <i class="fab fa-github"></i>
+                  </p>
                 </PortfolioButton>
-              </Card>
-            </div>
-
-            <div class="container">
-              <Card>
-                <CardBody>
-                  <h3 class="card-title">RGB Colorgame </h3>
-                  <UploadcareImage uuid="b7b481db-dae3-4c48-9b52-48308b077342" />
-
-                  <p class="card-text">
-                    A simple game to teach about the RGB color model.
-                    <br />
-                    Technologies and tools used:
-                    <br />
-                    HTML&nbsp;&nbsp; |&nbsp;&nbsp; JavaScript&nbsp;&nbsp;
-                    |&nbsp;&nbsp; VSCode
-                  </p>
-
-                  <PortfolioButton
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    href="https://github.com/3n1k0/Color-Guessing-Game"
-                  >
-                    <p>
-                      See on GitHub <i class="fab fa-github"></i>
-                    </p>
-                  </PortfolioButton>
-                </CardBody>
-              </Card>
-            </div>
-
-            <div class="container">
-              <Card>
-                <CardBody>
-                  <h3 class="card-title">Cat Memory Game </h3>
-                  <UploadcareImage uuid="66d89e57-f70f-4bd1-bc4a-75446629affb" />
-                  <p class="card-text">
-                    A JavaScript game.
-                    <br />
-                    Technologies and tools used:
-                    <br />
-                    HTML&nbsp;&nbsp; | &nbsp;&nbsp;SASS&nbsp;&nbsp;
-                    |&nbsp;&nbsp; JavaScript &nbsp;&nbsp;| &nbsp;&nbsp;VSCode
-                  </p>
-
-                  <PortfolioButton
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    href="https://github.com/3n1k0/The-Cat-Memory-Game"
-                  >
-                    <p>
-                      See on GitHub <i class="fab fa-github"></i>
-                    </p>
-                  </PortfolioButton>
-                </CardBody>
-              </Card>
-            </div>
+              </CardBody>
+            </Card>
           </Projects>
           <ToolsandSkills />
         </PortfolioContainer>

@@ -17,7 +17,7 @@ import { BounceArrow } from "../BounceArrow.css";
 const UpArrowWrapper = styled.div`
   width: 50px;
   height: 50px;
-  position: absolute;
+  position: fixed;
   bottom: 70px;
   right: 30px;
   font-size: 50px;
@@ -143,7 +143,7 @@ const Home = () => {
       <UpArrowWrapper style={{ opacity: scrollPercentage / 10 }}>
         <i
           onClick={() => {
-            mainContainerRef.current.scrollTo({
+            window.scrollTo({
               top: 0,
               behavior: "smooth",
             });

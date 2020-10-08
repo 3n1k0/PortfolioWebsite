@@ -42,6 +42,14 @@ const Navbar = styled.nav`
     }
   }
 
+  @media ${device.tablet} {
+    align-content: center;
+    justify-items: center;
+    height: 100%;
+    overflow: hidden;
+    position: fixed;
+  }
+
   @media ${device.desktop} {
     width: 100%;
     height: 50px;
