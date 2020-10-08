@@ -3,6 +3,7 @@ import React from "react";
 import SectionContainer from "../SectionContainer";
 import { Button } from "./Contact";
 import { device } from "../mediaquery";
+import { fonts } from "../config";
 
 const AboutContainer = styled.div`
   width: 100%;
@@ -41,9 +42,40 @@ const TextBox = styled.div`
   text-align: center;
   font-size: 19px;
   line-height: 1.5;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 
   @media ${device.desktop} {
     width: 78%;
+  }
+`;
+
+const DownloadCV = styled.a`
+  width: 250px;
+  height: 45px;
+  border: none;
+  outline: none;
+  box-shadow: 0 3px 2px 0 grey;
+  color: #fff;
+  font-size: 14px;
+  text-shadow: 0 1px rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.4);
+  font-family: ${fonts.others};
+  margin-bottom: 40px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+  }
+
+  i {
+    padding-left: 20px;
   }
 `;
 
@@ -88,13 +120,15 @@ class About extends React.Component {
               constantly learning new technologies and methodologies in order to
               help businesses grow.
               <br /> <br />
-              <Button
+              <DownloadCV
+                target="_blank"
+                rel="noopener noreferrer"
                 style={{ marginTop: "30px" }}
                 a
-                href="http://eniko.dev/assets/eniko-kosztolanyi-CV.pdf"
+                href="http://eniko.dev/eniko-kosztolanyi-CV.pdf"
               >
                 Download my CV<i class="fas fa-download"></i>
-              </Button>
+              </DownloadCV>
             </TextBox>
           </Description>
           <Wrapper data-aos="fade-down">
