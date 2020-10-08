@@ -6,11 +6,11 @@ import { device } from "../mediaquery";
 const Navbar = styled.nav`
   width: 50%;
   height: 100%;
-  background-color: black;
   color: white;
   position: absolute;
   right: 0;
-  align-items: center;
+  align-items: flex-start;
+
   top: 0;
   background: rgba(0, 0, 0, 0.9);
 
