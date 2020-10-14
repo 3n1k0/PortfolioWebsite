@@ -33,6 +33,10 @@ const Hello = styled.div`
 
   span {
     display: none;
+
+    @media ${device.desktop} {
+      display: inline;
+    }
   }
 
   h2 {
