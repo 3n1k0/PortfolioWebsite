@@ -8,4 +8,5 @@ export const UpArrowWrapper = styled.div`
   right: 30px;
   font-size: 50px;
   cursor: pointer;
+  z-index: 0;
 `;

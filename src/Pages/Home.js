@@ -23,6 +23,14 @@ const HomeContainer = styled.div`
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  z-index: 2;
+  position: relative;
+  background: radial-gradient(
+    circle,
+    rgba(108, 63, 142, 1) 27%,
+    rgba(38, 48, 125, 1) 90%
+  );
+  border-bottom: 1px dashed silver;
 `;
 
 const Hello = styled.div`
