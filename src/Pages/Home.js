@@ -16,6 +16,7 @@ import { UpArrowWrapper } from "../UpArrow";
 
 const HomeContainer = styled.div`
   width: 100%;
+  height: 100vh;
   padding-top: 50px;
   display: flex;
   flex-flow: column nowrap;
