@@ -10,6 +10,7 @@ const Navbar = styled.nav`
   position: absolute;
   right: 0;
   align-items: flex-start;
+  z-index: 3;
 
   top: 0;
   background: rgba(0, 0, 0, 0.9);

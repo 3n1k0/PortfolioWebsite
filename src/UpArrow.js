@@ -1,4 +1,5 @@
 import styled from "styled-components/macro";
+import React, { useRef, useEffect } from "react";
 
 export const UpArrowWrapper = styled.div`
   width: 50px;
@@ -8,5 +9,4 @@ export const UpArrowWrapper = styled.div`
   right: 30px;
   font-size: 50px;
   cursor: pointer;
-  z-index: 0;
 `;

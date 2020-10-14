@@ -13,6 +13,7 @@ import { fonts } from "../config";
 import Footer from "./Footer";
 import { BounceArrow } from "../BounceArrow.css";
 import { UpArrowWrapper } from "../UpArrow";
+import useScrollPosition from "../useScrollPosition";
 
 const HomeContainer = styled.div`
   width: 100%;
@@ -23,14 +24,7 @@ const HomeContainer = styled.div`
   align-items: center;
   justify-content: center;
   overflow: hidden;
-  z-index: 2;
   position: relative;
-  background: radial-gradient(
-    circle,
-    rgba(108, 63, 142, 1) 27%,
-    rgba(38, 48, 125, 1) 90%
-  );
-  border-bottom: 1px dashed silver;
 `;
 
 const Hello = styled.div`
@@ -80,6 +74,8 @@ const Hello = styled.div`
 `;
 
 const Home = () => {
+  console.log(window.scrollY);
+
   return (
     <>
       <GlobalStyle />
