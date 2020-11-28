@@ -173,25 +173,23 @@ class Portfolio extends React.Component {
 
             <Card>
               <CardBody>
-                <h3 class="card-title">RGB Colorgame </h3>
-                <UploadcareImage uuid="b7b481db-dae3-4c48-9b52-48308b077342" />
+                <h3 class="card-title">The Catcyclopedia </h3>
+                <UploadcareImage uuid="4c3104a8-4af4-442c-8a14-4a6326e7d302" />
 
                 <p class="card-text">
-                  A simple game to teach about the RGB color model.
+                  Vue JS application featuring The Cat API.
                   <br />
                   Technologies and tools used:
                   <br />
-                  HTML&nbsp;&nbsp; |&nbsp;&nbsp; JavaScript&nbsp;&nbsp;
-                  |&nbsp;&nbsp; VSCode
+                  RESTful API&nbsp;&nbsp; |&nbsp;&nbsp; JavaScript&nbsp;&nbsp;
+                  |&nbsp;&nbsp; Vue JS&nbsp;&nbsp; |&nbsp;&nbsp; CSS
                 </p>
                 <PortfolioButton
                   target="_blank"
                   rel="noreferrer noopener"
-                  href="https://github.com/3n1k0/Color-Guessing-Game"
+                  href="https://the-catcyclopedia.netlify.app/"
                 >
-                  <p>
-                    See on GitHub <i class="fab fa-github"></i>
-                  </p>
+                  <p>Visit Website</p>
                 </PortfolioButton>
               </CardBody>
             </Card>

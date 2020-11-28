@@ -12,7 +12,7 @@ html {
     height: 100%;
     color: papayawhip;
     background: rgb(59,0,105);
-    background: radial-gradient(circle, rgba(108,63,142,1) 27%, rgba(38,48,125,1) 90%);
+    background: radial-gradient(circle, rgba(93,50,127,1) 27%, rgba(38,48,125,1) 90%);
     align-content: center;
     overscroll-behavior-y: none;
     justify-items: center;
