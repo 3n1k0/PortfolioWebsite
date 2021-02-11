@@ -222,7 +222,7 @@ class Portfolio extends React.Component {
                   href="https://www.squache.com/"
                 >
                   <p>
-                    See on GitHub <i class="fab fa-github"></i>
+                    Visit website
                   </p>
                 </PortfolioButton>
               </CardBody>
