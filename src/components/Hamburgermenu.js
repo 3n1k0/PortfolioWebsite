@@ -1,6 +1,6 @@
-import React, { Component, useState } from "react";
+import React, { Component } from "react";
 import styled, { css } from "styled-components/macro";
-import { device } from "./mediaquery";
+import { device } from "../config/mediaquery";
 
 const Wrapper = styled.div`
   display: grid;

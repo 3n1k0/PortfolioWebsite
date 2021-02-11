@@ -24,9 +24,8 @@ html {
 
   *{
     box-sizing: border-box;
-    font-family: "Raleway";
     text-decoration: none;
-    
+    font-family: 'Montserrat', sans-serif;
   }
 
 

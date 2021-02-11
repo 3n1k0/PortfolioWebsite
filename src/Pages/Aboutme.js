@@ -1,9 +1,7 @@
 import styled from "styled-components/macro";
 import React from "react";
-import SectionContainer from "../SectionContainer";
-import { Button } from "./Contact";
-import { device } from "../mediaquery";
-import { fonts } from "../config";
+import SectionContainer from "../components/SectionContainer";
+import { device } from "../config/mediaquery";
 
 const AboutContainer = styled.div`
   width: 100%;
@@ -30,7 +28,9 @@ const Description = styled.div`
   display: flex;
   flex-flow: column nowrap;
   align-items: center;
-  text-align: center h1 {
+  text-align: center;
+  
+  h1 {
     color: black;
   }
 `;
@@ -39,16 +39,15 @@ const TextBox = styled.div`
   width: 100%;
   height: 100%;
   color: papayawhip;
-  text-align: center;
+  text-align: left;
   font-size: 19px;
-  line-height: 1.5;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 
   @media ${device.desktop} {
-    width: 78%;
+    width: 60%;
   }
 `;
 
@@ -62,7 +61,6 @@ const DownloadCV = styled.a`
   font-size: 14px;
   text-shadow: 0 1px rgba(0, 0, 0, 0.4);
   background-color: rgba(0, 0, 0, 0.4);
-  font-family: ${fonts.others};
   margin-bottom: 40px;
   text-align: center;
   display: flex;
@@ -88,16 +86,7 @@ const Wrapper = styled.div`
     width: 100%;
     height: auto;
     border-radius: 0%;
-
-    @media ${device.desktop} {
-      width: 250px;
-      border-radius: 50%;
-    }
-
-    @media ${device.tablet} {
-      width: 250px;
-      border-radius: 50%;
-    }
+    width: 400px;
   }
 `;
 
@@ -105,21 +94,28 @@ class About extends React.Component {
   render() {
     return (
       <SectionContainer>
-        <a name="about"></a>
+        <a href="/about" name="about"> </a>
         <h2 data-aos="fade-right">About me</h2>
         <AboutContainer>
           <Description>
             <TextBox data-aos="fade-up">
-              My name is Eniko and I am a Web Developer based in Amsterdam. My
-              passion is to create dynamic and intuitive user experience. I love
-              new technologies and always invested in bringing unique ideas into
-              life by building highly functioning websites and applications.
-              <br /> Contributing to the creation of user-centered high-quality
-              products is what drives my work ethic. <br /> <br /> I am a
-              resourceful problem solver with great attention to detail. I am
-              constantly learning new technologies and methodologies in order to
-              help businesses grow.
-              <br /> <br />
+              <p>
+                {" "}
+                I'm Eniko and I am a web developer based in Amsterdam. My
+                passion is to create dynamic and intuitive user experience. I
+                love new technologies and always invested in bringing unique
+                ideas into life by building highly functioning websites and
+                applications.
+              </p>
+              <p>
+                Contributing to the creation of user-centered high-quality
+                products is what drives my work ethic.
+              </p>
+              <p>
+                I am a resourceful problem solver with great attention to
+                detail, who's constantly learning new technologies and
+                methodologies in order to help businesses grow.
+              </p>
               <DownloadCV
                 target="_blank"
                 rel="noopener noreferrer"
@@ -133,7 +129,7 @@ class About extends React.Component {
           </Description>
           <Wrapper data-aos="fade-down">
             <picture>
-              <img src="//ucarecdn.com/4d78fa47-41cd-4dfa-97e5-79ce16fc0070/-/format/auto/" />
+              <img src="//ucarecdn.com/4d78fa47-41cd-4dfa-97e5-79ce16fc0070/-/format/auto/" alt="eniko-kosztolanyi" />
             </picture>
           </Wrapper>
         </AboutContainer>

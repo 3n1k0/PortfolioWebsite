@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components/macro";
-import { device } from "../mediaquery";
+import { device } from "../config/mediaquery";
 
 const ServiceWrapper = styled.div`
   width: 85%;

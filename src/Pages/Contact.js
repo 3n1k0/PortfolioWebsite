@@ -1,6 +1,5 @@
 import React from "react";
-import SectionContainer from "../SectionContainer";
-import { fonts } from "../config";
+import SectionContainer from "../components/SectionContainer";
 import styled from "styled-components/macro";
 
 export const Button = styled.button`
@@ -13,7 +12,6 @@ export const Button = styled.button`
   font-size: 14px;
   text-shadow: 0 1px rgba(0, 0, 0, 0.4);
   background-color: rgba(0, 0, 0, 0.4);
-  font-family: ${fonts.others};
   margin-bottom: 40px;
   text-align: center;
 
@@ -73,7 +71,6 @@ const Container = styled.div`
     height: 200px;
   }
   h1 {
-    font-family: ${fonts.titles};
     text-transform: uppercase;
     text-align: center;
     font-size: 37px;
@@ -85,7 +82,6 @@ const Container = styled.div`
   }
   label {
     padding-bottom: 10px;
-    font-family: "Raleway";
     opacity: 0.7;
     text-transform: uppercase;
     letter-spacing: 1px;
@@ -97,7 +93,7 @@ class Contact extends React.Component {
     return (
       <div>
         <SectionContainer>
-          <a name="contact"></a>
+          <a href="/contact" name="contact"> </a>
           <Container>
             <form action="https://formspree.io/mknqqvoz" method="POST">
               <h1>Contact</h1>

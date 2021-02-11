@@ -1,8 +1,8 @@
 import React from "react";
-import SectionContainer from "../SectionContainer";
+import SectionContainer from "../components/SectionContainer";
 import styled from "styled-components/macro";
-import { device } from "../mediaquery";
-import UploadcareImage from "../UploadcareImage";
+import { device } from "../config/mediaquery";
+import UploadcareImage from "../components/UploadcareImage";
 import ToolsandSkills from "./Tools";
 
 const PortfolioContainer = styled.div`
@@ -22,6 +22,15 @@ const PortfolioContainer = styled.div`
     letter-spacing: -0.56px;
     font-style: normal;
   }
+
+  img {
+    padding-bottom: 20px;
+    width: 100%;
+    height: width;
+    filter: brightness(90%);
+    max-width: 250px;
+    max-height: 250px;
+  }
 `;
 
 const PortfolioButton = styled.a`
@@ -34,17 +43,12 @@ const PortfolioButton = styled.a`
   font-size: 16px;
   text-shadow: 0 1px rgba(0, 0, 0, 0.4);
   background-color: rgba(0, 0, 0, 0.4);
-  font-family: "Raleway";
   cursor: pointer;
   color: papayawhip;
   background-color: #1863c4;
   display: flex;
   align-items: center;
   justify-content: center;
-
-  p {
-    font-family: "Raleway";
-  }
 `;
 
 const Projects = styled.div`
@@ -115,7 +119,9 @@ class Portfolio extends React.Component {
   render() {
     return (
       <SectionContainer>
-        <a name="portfolio"></a>
+        <a href="/portfolio" name="portfolio">
+          {" "}
+        </a>
         <PortfolioContainer>
           <h2 data-aos="fade-right">Featured projects</h2>
 
@@ -179,6 +185,7 @@ class Portfolio extends React.Component {
                 <p class="card-text">
                   Vue JS application featuring The Cat API.
                   <br />
+                  <br />
                   Technologies and tools used:
                   <br />
                   RESTful API&nbsp;&nbsp; |&nbsp;&nbsp; JavaScript&nbsp;&nbsp;
@@ -196,21 +203,23 @@ class Portfolio extends React.Component {
 
             <Card>
               <CardBody>
-                <h3 class="card-title">Cat Memory Game </h3>
-                <UploadcareImage uuid="66d89e57-f70f-4bd1-bc4a-75446629affb" />
+                <h3 class="card-title">Squache Technology News</h3>
+                <img src="https://www.squache.com/wp-content/uploads/2021/01/WA-WSPUK-Squache-FF-01-e1612653892174.jpg" />
                 <p class="card-text">
-                  A JavaScript game.
+                  The latest technology news. An ongoing collaboration with the
+                  tech journalist Akansha Srivastava.
+                  <br />
                   <br />
                   Technologies and tools used:
                   <br />
-                  HTML&nbsp;&nbsp; | &nbsp;&nbsp;SASS&nbsp;&nbsp; |&nbsp;&nbsp;
-                  JavaScript &nbsp;&nbsp;| &nbsp;&nbsp;VSCode
+                  Wordpress&nbsp;&nbsp; | &nbsp;&nbsp;PHP myAdmin&nbsp;&nbsp;
+                  |&nbsp;&nbsp; cPanel &nbsp;&nbsp;
                 </p>
 
                 <PortfolioButton
                   target="_blank"
                   rel="noreferrer noopener"
-                  href="https://github.com/3n1k0/The-Cat-Memory-Game"
+                  href="https://www.squache.com/"
                 >
                   <p>
                     See on GitHub <i class="fab fa-github"></i>

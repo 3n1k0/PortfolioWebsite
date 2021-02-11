@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components/macro";
-import { device } from "../mediaquery";
+import { device } from "../config/mediaquery";
 
 const FooterText = styled.div`
   text-align: center;
@@ -12,7 +12,6 @@ const FooterText = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: "Raleway";
   font-weight: 100;
   margin-top: 80px;
 `;
@@ -25,7 +24,6 @@ const InsideWrapper = styled.a`
 `;
 
 const Text = styled.div`
-  font-family: "Raleway";
   font-size: 15px;
 `;
 
@@ -68,7 +66,6 @@ const IconContainer = styled.div`
 
     p {
       font-size: 15px;
-      font-family: "Raleway";
       padding-top: 40px;
     }
 

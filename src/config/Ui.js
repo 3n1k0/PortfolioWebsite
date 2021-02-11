@@ -38,7 +38,6 @@ export const CardInnerContainer = styled.div`
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
-  line-height: 2;
   width: 100%;
   color: rgb(88, 86, 86);
   font-size: 15px;
@@ -68,7 +67,6 @@ export const Szepalcim = styled.div`
 
   letter-spacing: 0px;
   text-transform: none;
-  line-height: 1.5em;
   padding-bottom: 30px;
   max-width: 100%;
   margin: 0 auto;

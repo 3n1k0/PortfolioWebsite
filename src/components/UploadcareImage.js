@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components/macro";
-import { device } from "./mediaquery";
+import { device } from "../config/mediaquery";
 
 const StyledImage = styled.img`
   padding-bottom: 20px;

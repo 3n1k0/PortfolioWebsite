@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Home from "./Pages/Home";
-import About from "./Pages/Aboutme";
-import Contact from "./Pages/Contact";
-import Portfolio from "./Pages/Portfolio";
-import Notfound from "./Pages/Notfound";
+import Home from "./pages/Home";
+import About from "./pages/Aboutme";
+import Contact from "./pages/Contact";
+import Portfolio from "./pages/Portfolio";
+import Notfound from "./pages/Notfound";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 ReactDOM.render(

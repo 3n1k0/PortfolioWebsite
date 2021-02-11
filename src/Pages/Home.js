@@ -1,19 +1,16 @@
-import React, { lazy, useEffect, useState, useRef } from "react";
-import { device } from "../mediaquery";
+import React from "react";
+import { device } from "../config/mediaquery";
 import styled from "styled-components/macro";
 import Typewriter from "typewriter-effect";
-import GlobalStyle from "../globalStyles";
-import Progress from "../Progress";
+import GlobalStyle from "../config/globalStyles";
+import Progress from "../components/Progress";
 import Navigation from "./Navigation";
 import About from "./Aboutme";
 import Portfolio from "./Portfolio";
 import Contact from "./Contact";
-import SectionContainer from "../SectionContainer";
-import { fonts } from "../config";
+import SectionContainer from "../components/SectionContainer";
 import Footer from "./Footer";
-import { BounceArrow } from "../BounceArrow.css";
-import { UpArrowWrapper } from "../UpArrow";
-import useScrollPosition from "../useScrollPosition";
+
 
 const HomeContainer = styled.div`
   width: 100%;
@@ -85,7 +82,7 @@ const Home = () => {
       <GlobalStyle />
 
       <SectionContainer>
-        <a name="home"></a>
+        <a href="/" name="home"> </a>
         <Progress />
         <HomeContainer>
           <Hello>
@@ -123,7 +120,7 @@ const Home = () => {
             <i class="fas fa-angle-double-down"></i>
           </Hello>
         </HomeContainer>
-      </SectionContainer>
+      </SectionContainer >
 
       <SectionContainer>
         <About />
@@ -136,18 +133,6 @@ const Home = () => {
       <SectionContainer>
         <Contact />
       </SectionContainer>
-
-      <UpArrowWrapper>
-        <i
-          onClick={() => {
-            window.scrollTo({
-              top: 0,
-              behavior: "smooth",
-            });
-          }}
-          class="fas fa-arrow-circle-up"
-        ></i>
-      </UpArrowWrapper>
 
       <Footer />
       <Navigation />

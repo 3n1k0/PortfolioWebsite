@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import HamburgerMenu from "../Hamburgermenu";
+import HamburgerMenu from "../components/Hamburgermenu";
 import styled from "styled-components/macro";
-import { device } from "../mediaquery";
+import { device } from "../config/mediaquery";
 
 const Navbar = styled.nav`
   width: 50%;
@@ -33,7 +33,6 @@ const Navbar = styled.nav`
     text-decoration: none;
     text-transform: uppercase;
     color: white;
-    font-family: "Raleway";
     font-size: 2em;
     letter-spacing: 2px;
     font-weight: 400;
@@ -84,7 +83,6 @@ const Navbar = styled.nav`
         text-decoration: none;
         text-transform: uppercase;
         color: white;
-        font-family: "Raleway";
         font-size: 1em;
         letter-spacing: 2px;
         font-weight: 400;
